@@ -1,0 +1,68 @@
+
+project:
+  name: istanbul-time-series-forecast
+  timezone: Europe/Istanbul
+
+data:
+  raw_path: data/raw
+
+  initial:
+    source: local
+    file_path: data/raw/initial_dataset.csv
+    url: null
+    date_column: date
+    target_column: sales
+    format: csv
+
+  weather:
+    latitude: 41.0082
+    longitude: 28.9784
+    timezone: Europe/Istanbul
+    temperature_unit: celsius
+    wind_speed_unit: kmh
+    precipitation_unit: mm
+
+    daily_variables:
+      - temperature_2m_mean
+      - temperature_2m_max
+      - temperature_2m_min
+      - precipitation_sum
+      - rain_sum
+      - snowfall_sum
+      - wind_speed_10m_max
+      - wind_gusts_10m_max
+
+    hourly_variables:
+      - relative_humidity_2m
+
+  holidays:
+    country: TR
+    language: en
+
+validation:
+  require_unique_dates: true
+  require_sorted_dates: true
+  min_weather_coverage: 0.95
+  min_holiday_coverage: 1.0
+
+sales:
+  input_file: data/source/original_transactions.csv
+  output_file: data/raw/initial_dataset.csv
+
+  format: csv
+
+  # Seleccionar: amount o quantity_price
+  sales_mode: quantity_price
+
+  date_column: invoice_date
+  quantity_column: quantity
+  price_column: price
+  amount_column: Sales
+
+  dayfirst: true
+
+modeling:
+  granularity: weekly
+  forecast_horizon_days: 30
+  week_start: MON
+  output_file: data/processed/modeling_dataset.csv
