@@ -40,28 +40,28 @@ data:
     country: TR
     language: en
 
-validation:
-  require_unique_dates: true
-  require_sorted_dates: true
-  min_weather_coverage: 0.95
-  min_holiday_coverage: 1.0
+  validation:
+    require_unique_dates: true
+    require_sorted_dates: true
+    min_weather_coverage: 0.95
+    min_holiday_coverage: 1.0
 
-sales:
-  input_file: data/source/original_transactions.csv
-  output_file: data/raw/initial_dataset.csv
-  format: csv
+  sales:
+    input_file: data/source/original_transactions.csv
+    output_file: data/raw/initial_dataset.csv
+    format: csv
 
-  date_column: invoice_date
-  quantity_column: quantity
-  price_column: price
-  category_column: category
-  store_column: shopping_mall
-  gender_column: gender
-  dayfirst: true
-  target_column: quantity
+    date_column: invoice_date
+    quantity_column: quantity
+    price_column: price
+    category_column: category
+    store_column: shopping_mall
+    gender_column: gender
+    dayfirst: true
+    target_column: quantity
 
-modeling:
-  granularity: weekly
-  forecast_horizon_days: 30
-  week_start: MON
-  output_file: data/processed/modeling_dataset.csv
+  modeling:
+    granularity: weekly
+    forecast_horizon_days: 30
+    week_start: MON
+    output_path: data/processed/modeling_dataset.csv
