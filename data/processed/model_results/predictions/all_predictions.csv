@@ -1,0 +1,961 @@
+﻿partition,model,shopping_mall,category,week_start,y_true,y_pred,status,error
+final_test,linear_regression,Cevahir AVM,Books,2023-02-06,3.0,7.461016752387605,ok,
+final_test,linear_regression,Cevahir AVM,Books,2023-02-13,0.0,8.131289243981016,ok,
+final_test,linear_regression,Cevahir AVM,Books,2023-02-20,0.0,8.561532488889846,ok,
+final_test,linear_regression,Cevahir AVM,Books,2023-02-27,4.0,9.45641417690831,ok,
+final_test,sarimax,Cevahir AVM,Books,2023-02-06,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Books,2023-02-13,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Books,2023-02-20,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Books,2023-02-27,4.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Books,2023-02-06,3.0,7.461411893367767,ok,
+final_test,lstm,Cevahir AVM,Books,2023-02-13,0.0,7.870041489601135,ok,
+final_test,lstm,Cevahir AVM,Books,2023-02-20,0.0,7.797991096973419,ok,
+final_test,lstm,Cevahir AVM,Books,2023-02-27,4.0,6.793237388134003,ok,
+final_test,linear_regression,Cevahir AVM,Clothing,2023-02-06,41.0,41.22947913541648,ok,
+final_test,linear_regression,Cevahir AVM,Clothing,2023-02-13,54.0,43.82961150527634,ok,
+final_test,linear_regression,Cevahir AVM,Clothing,2023-02-20,51.0,42.0451897342263,ok,
+final_test,linear_regression,Cevahir AVM,Clothing,2023-02-27,89.0,40.41042649586833,ok,
+final_test,sarimax,Cevahir AVM,Clothing,2023-02-06,41.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Clothing,2023-02-13,54.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Clothing,2023-02-20,51.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Clothing,2023-02-27,89.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C0A29FD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Clothing,2023-02-06,41.0,14.131578862667086,ok,
+final_test,lstm,Cevahir AVM,Clothing,2023-02-13,54.0,19.45083925127983,ok,
+final_test,lstm,Cevahir AVM,Clothing,2023-02-20,51.0,17.61115015298128,ok,
+final_test,lstm,Cevahir AVM,Clothing,2023-02-27,89.0,18.708932518959045,ok,
+final_test,linear_regression,Cevahir AVM,Cosmetics,2023-02-06,21.0,17.957238472276842,ok,
+final_test,linear_regression,Cevahir AVM,Cosmetics,2023-02-13,19.0,20.36276731692117,ok,
+final_test,linear_regression,Cevahir AVM,Cosmetics,2023-02-20,6.0,22.342599190945645,ok,
+final_test,linear_regression,Cevahir AVM,Cosmetics,2023-02-27,17.0,22.31289012367886,ok,
+final_test,sarimax,Cevahir AVM,Cosmetics,2023-02-06,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C1FED0040>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Cosmetics,2023-02-13,19.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C1FED0040>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Cosmetics,2023-02-20,6.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C1FED0040>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Cosmetics,2023-02-27,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C1FED0040>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Cosmetics,2023-02-06,21.0,15.723313003778458,ok,
+final_test,lstm,Cevahir AVM,Cosmetics,2023-02-13,19.0,16.271836400032043,ok,
+final_test,lstm,Cevahir AVM,Cosmetics,2023-02-20,6.0,15.81992593407631,ok,
+final_test,lstm,Cevahir AVM,Cosmetics,2023-02-27,17.0,16.02060043811798,ok,
+final_test,linear_regression,Cevahir AVM,Food & Beverage,2023-02-06,26.0,17.027708657631123,ok,
+final_test,linear_regression,Cevahir AVM,Food & Beverage,2023-02-13,18.0,17.54269563073393,ok,
+final_test,linear_regression,Cevahir AVM,Food & Beverage,2023-02-20,21.0,22.002316108335293,ok,
+final_test,linear_regression,Cevahir AVM,Food & Beverage,2023-02-27,23.0,23.876363798984595,ok,
+final_test,sarimax,Cevahir AVM,Food & Beverage,2023-02-06,26.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C23AF1760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Food & Beverage,2023-02-13,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C23AF1760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Food & Beverage,2023-02-20,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C23AF1760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Food & Beverage,2023-02-27,23.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C23AF1760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Food & Beverage,2023-02-06,26.0,18.822144985198975,ok,
+final_test,lstm,Cevahir AVM,Food & Beverage,2023-02-13,18.0,20.655083179473877,ok,
+final_test,lstm,Cevahir AVM,Food & Beverage,2023-02-20,21.0,22.142197608947754,ok,
+final_test,lstm,Cevahir AVM,Food & Beverage,2023-02-27,23.0,24.06895351409912,ok,
+final_test,linear_regression,Cevahir AVM,Shoes,2023-02-06,14.0,11.269317910959208,ok,
+final_test,linear_regression,Cevahir AVM,Shoes,2023-02-13,13.0,10.430304480752048,ok,
+final_test,linear_regression,Cevahir AVM,Shoes,2023-02-20,5.0,12.058417410875528,ok,
+final_test,linear_regression,Cevahir AVM,Shoes,2023-02-27,10.0,14.42378651079599,ok,
+final_test,sarimax,Cevahir AVM,Shoes,2023-02-06,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C239D1EE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Shoes,2023-02-13,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C239D1EE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Shoes,2023-02-20,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C239D1EE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Shoes,2023-02-27,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C239D1EE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Shoes,2023-02-06,14.0,2.0067638717591763,ok,
+final_test,lstm,Cevahir AVM,Shoes,2023-02-13,13.0,1.5347551181912422,ok,
+final_test,lstm,Cevahir AVM,Shoes,2023-02-20,5.0,3.0376923456788063,ok,
+final_test,lstm,Cevahir AVM,Shoes,2023-02-27,10.0,4.928603395819664,ok,
+final_test,linear_regression,Cevahir AVM,Souvenir,2023-02-06,8.0,6.108418356679982,ok,
+final_test,linear_regression,Cevahir AVM,Souvenir,2023-02-13,6.0,9.013643427573038,ok,
+final_test,linear_regression,Cevahir AVM,Souvenir,2023-02-20,5.0,8.519054946613462,ok,
+final_test,linear_regression,Cevahir AVM,Souvenir,2023-02-27,9.0,7.817188045210895,ok,
+final_test,sarimax,Cevahir AVM,Souvenir,2023-02-06,8.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C275A11C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Souvenir,2023-02-13,6.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C275A11C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Souvenir,2023-02-20,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C275A11C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Souvenir,2023-02-27,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C275A11C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Souvenir,2023-02-06,8.0,3.6475070267915726,ok,
+final_test,lstm,Cevahir AVM,Souvenir,2023-02-13,6.0,6.186873733997345,ok,
+final_test,lstm,Cevahir AVM,Souvenir,2023-02-20,5.0,7.95067697763443,ok,
+final_test,lstm,Cevahir AVM,Souvenir,2023-02-27,9.0,7.079567134380341,ok,
+final_test,linear_regression,Cevahir AVM,Technology,2023-02-06,10.0,5.806335629317958,ok,
+final_test,linear_regression,Cevahir AVM,Technology,2023-02-13,12.0,9.569662940572456,ok,
+final_test,linear_regression,Cevahir AVM,Technology,2023-02-20,13.0,10.126948309359689,ok,
+final_test,linear_regression,Cevahir AVM,Technology,2023-02-27,5.0,9.290426716188751,ok,
+final_test,sarimax,Cevahir AVM,Technology,2023-02-06,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C29E404A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Technology,2023-02-13,12.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C29E404A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Technology,2023-02-20,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C29E404A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Technology,2023-02-27,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C29E404A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Technology,2023-02-06,10.0,7.102036952972412,ok,
+final_test,lstm,Cevahir AVM,Technology,2023-02-13,12.0,6.363971710205078,ok,
+final_test,lstm,Cevahir AVM,Technology,2023-02-20,13.0,3.129563093185425,ok,
+final_test,lstm,Cevahir AVM,Technology,2023-02-27,5.0,3.349154472351074,ok,
+final_test,linear_regression,Cevahir AVM,Toys,2023-02-06,8.0,18.155498129898476,ok,
+final_test,linear_regression,Cevahir AVM,Toys,2023-02-13,11.0,15.497897163095864,ok,
+final_test,linear_regression,Cevahir AVM,Toys,2023-02-20,8.0,11.715998188658409,ok,
+final_test,linear_regression,Cevahir AVM,Toys,2023-02-27,7.0,11.78704109067247,ok,
+final_test,sarimax,Cevahir AVM,Toys,2023-02-06,8.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Toys,2023-02-13,11.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Toys,2023-02-20,8.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Cevahir AVM,Toys,2023-02-27,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Cevahir AVM,Toys,2023-02-06,8.0,0.0,ok,
+final_test,lstm,Cevahir AVM,Toys,2023-02-13,11.0,0.0,ok,
+final_test,lstm,Cevahir AVM,Toys,2023-02-20,8.0,0.0,ok,
+final_test,lstm,Cevahir AVM,Toys,2023-02-27,7.0,0.0,ok,
+final_test,linear_regression,Emaar Square Mall,Books,2023-02-06,8.0,8.167769597490443,ok,
+final_test,linear_regression,Emaar Square Mall,Books,2023-02-13,20.0,8.192617374000479,ok,
+final_test,linear_regression,Emaar Square Mall,Books,2023-02-20,12.0,5.425980276131925,ok,
+final_test,linear_regression,Emaar Square Mall,Books,2023-02-27,1.0,7.070248263318746,ok,
+final_test,sarimax,Emaar Square Mall,Books,2023-02-06,8.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Books,2023-02-13,20.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Books,2023-02-20,12.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Books,2023-02-27,1.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C274A2DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Books,2023-02-06,8.0,0.0,ok,
+final_test,lstm,Emaar Square Mall,Books,2023-02-13,20.0,0.0,ok,
+final_test,lstm,Emaar Square Mall,Books,2023-02-20,12.0,0.0,ok,
+final_test,lstm,Emaar Square Mall,Books,2023-02-27,1.0,0.0,ok,
+final_test,linear_regression,Emaar Square Mall,Clothing,2023-02-06,48.0,39.960655679319416,ok,
+final_test,linear_regression,Emaar Square Mall,Clothing,2023-02-13,52.0,41.21014336406566,ok,
+final_test,linear_regression,Emaar Square Mall,Clothing,2023-02-20,55.0,43.91875303077667,ok,
+final_test,linear_regression,Emaar Square Mall,Clothing,2023-02-27,40.0,49.14968390825692,ok,
+final_test,sarimax,Emaar Square Mall,Clothing,2023-02-06,48.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F3874C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Clothing,2023-02-13,52.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F3874C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Clothing,2023-02-20,55.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F3874C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Clothing,2023-02-27,40.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F3874C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Clothing,2023-02-06,48.0,20.388874478638172,ok,
+final_test,lstm,Emaar Square Mall,Clothing,2023-02-13,52.0,24.00965701788664,ok,
+final_test,lstm,Emaar Square Mall,Clothing,2023-02-20,55.0,26.822295114398003,ok,
+final_test,lstm,Emaar Square Mall,Clothing,2023-02-27,40.0,28.90966534614563,ok,
+final_test,linear_regression,Emaar Square Mall,Cosmetics,2023-02-06,18.0,17.266247933380793,ok,
+final_test,linear_regression,Emaar Square Mall,Cosmetics,2023-02-13,7.0,18.565897341859795,ok,
+final_test,linear_regression,Emaar Square Mall,Cosmetics,2023-02-20,12.0,17.67533071792396,ok,
+final_test,linear_regression,Emaar Square Mall,Cosmetics,2023-02-27,22.0,15.93906647018824,ok,
+final_test,sarimax,Emaar Square Mall,Cosmetics,2023-02-06,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2C7B6840>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Cosmetics,2023-02-13,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2C7B6840>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Cosmetics,2023-02-20,12.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2C7B6840>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Cosmetics,2023-02-27,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2C7B6840>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Cosmetics,2023-02-06,18.0,21.255103707313538,ok,
+final_test,lstm,Emaar Square Mall,Cosmetics,2023-02-13,7.0,15.858880400657654,ok,
+final_test,lstm,Emaar Square Mall,Cosmetics,2023-02-20,12.0,17.662329971790314,ok,
+final_test,lstm,Emaar Square Mall,Cosmetics,2023-02-27,22.0,15.605381608009338,ok,
+final_test,linear_regression,Emaar Square Mall,Food & Beverage,2023-02-06,17.0,21.083060820595414,ok,
+final_test,linear_regression,Emaar Square Mall,Food & Beverage,2023-02-13,26.0,20.675580862384912,ok,
+final_test,linear_regression,Emaar Square Mall,Food & Beverage,2023-02-20,15.0,24.746079495112014,ok,
+final_test,linear_regression,Emaar Square Mall,Food & Beverage,2023-02-27,29.0,21.446129489090318,ok,
+final_test,sarimax,Emaar Square Mall,Food & Beverage,2023-02-06,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Food & Beverage,2023-02-13,26.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Food & Beverage,2023-02-20,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Food & Beverage,2023-02-27,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Food & Beverage,2023-02-06,17.0,14.980969071388245,ok,
+final_test,lstm,Emaar Square Mall,Food & Beverage,2023-02-13,26.0,15.980071187019348,ok,
+final_test,lstm,Emaar Square Mall,Food & Beverage,2023-02-20,15.0,17.495568364858627,ok,
+final_test,lstm,Emaar Square Mall,Food & Beverage,2023-02-27,29.0,19.691305845975876,ok,
+final_test,linear_regression,Emaar Square Mall,Shoes,2023-02-06,15.0,12.87695923484972,ok,
+final_test,linear_regression,Emaar Square Mall,Shoes,2023-02-13,9.0,13.511410679384019,ok,
+final_test,linear_regression,Emaar Square Mall,Shoes,2023-02-20,3.0,13.505712822666105,ok,
+final_test,linear_regression,Emaar Square Mall,Shoes,2023-02-27,9.0,11.508470253623292,ok,
+final_test,sarimax,Emaar Square Mall,Shoes,2023-02-06,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Shoes,2023-02-13,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Shoes,2023-02-20,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Shoes,2023-02-27,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C33ED7F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Shoes,2023-02-06,15.0,13.61760038137436,ok,
+final_test,lstm,Emaar Square Mall,Shoes,2023-02-13,9.0,13.406255722045898,ok,
+final_test,lstm,Emaar Square Mall,Shoes,2023-02-20,3.0,14.42348200082779,ok,
+final_test,lstm,Emaar Square Mall,Shoes,2023-02-27,9.0,15.940485775470734,ok,
+final_test,linear_regression,Emaar Square Mall,Souvenir,2023-02-06,15.0,7.064309678153071,ok,
+final_test,linear_regression,Emaar Square Mall,Souvenir,2023-02-13,5.0,5.994433226252399,ok,
+final_test,linear_regression,Emaar Square Mall,Souvenir,2023-02-20,2.0,5.77104963749194,ok,
+final_test,linear_regression,Emaar Square Mall,Souvenir,2023-02-27,2.0,5.6931813144164245,ok,
+final_test,sarimax,Emaar Square Mall,Souvenir,2023-02-06,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37EEF6A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Souvenir,2023-02-13,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37EEF6A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Souvenir,2023-02-20,2.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37EEF6A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Souvenir,2023-02-27,2.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37EEF6A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Souvenir,2023-02-06,15.0,6.459859669208527,ok,
+final_test,lstm,Emaar Square Mall,Souvenir,2023-02-13,5.0,4.320704534649849,ok,
+final_test,lstm,Emaar Square Mall,Souvenir,2023-02-20,2.0,5.422160312533379,ok,
+final_test,lstm,Emaar Square Mall,Souvenir,2023-02-27,2.0,5.7081044018268585,ok,
+final_test,linear_regression,Emaar Square Mall,Technology,2023-02-06,4.0,4.812391821969233,ok,
+final_test,linear_regression,Emaar Square Mall,Technology,2023-02-13,14.0,5.627499202197827,ok,
+final_test,linear_regression,Emaar Square Mall,Technology,2023-02-20,0.0,5.515927577179474,ok,
+final_test,linear_regression,Emaar Square Mall,Technology,2023-02-27,5.0,5.902213933995847,ok,
+final_test,sarimax,Emaar Square Mall,Technology,2023-02-06,4.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Technology,2023-02-13,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Technology,2023-02-20,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Technology,2023-02-27,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Technology,2023-02-06,4.0,6.9373369216918945,ok,
+final_test,lstm,Emaar Square Mall,Technology,2023-02-13,14.0,7.473922669887543,ok,
+final_test,lstm,Emaar Square Mall,Technology,2023-02-20,0.0,6.814682185649872,ok,
+final_test,lstm,Emaar Square Mall,Technology,2023-02-27,5.0,6.989436149597168,ok,
+final_test,linear_regression,Emaar Square Mall,Toys,2023-02-06,16.0,9.51513574470017,ok,
+final_test,linear_regression,Emaar Square Mall,Toys,2023-02-13,9.0,11.766716674724135,ok,
+final_test,linear_regression,Emaar Square Mall,Toys,2023-02-20,26.0,13.535340723924902,ok,
+final_test,linear_regression,Emaar Square Mall,Toys,2023-02-27,7.0,13.58148105472947,ok,
+final_test,sarimax,Emaar Square Mall,Toys,2023-02-06,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Toys,2023-02-13,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Toys,2023-02-20,26.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Emaar Square Mall,Toys,2023-02-27,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C2F0FF2E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Emaar Square Mall,Toys,2023-02-06,16.0,9.634820938110352,ok,
+final_test,lstm,Emaar Square Mall,Toys,2023-02-13,9.0,10.837441444396973,ok,
+final_test,lstm,Emaar Square Mall,Toys,2023-02-20,26.0,7.859792709350586,ok,
+final_test,lstm,Emaar Square Mall,Toys,2023-02-27,7.0,8.28361701965332,ok,
+final_test,linear_regression,Forum Istanbul,Books,2023-02-06,4.0,5.330925024982451,ok,
+final_test,linear_regression,Forum Istanbul,Books,2023-02-13,12.0,7.4743093173942885,ok,
+final_test,linear_regression,Forum Istanbul,Books,2023-02-20,15.0,5.040203285716764,ok,
+final_test,linear_regression,Forum Istanbul,Books,2023-02-27,7.0,4.707640810039784,ok,
+final_test,sarimax,Forum Istanbul,Books,2023-02-06,4.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3B997100>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Books,2023-02-13,12.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3B997100>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Books,2023-02-20,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3B997100>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Books,2023-02-27,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3B997100>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Books,2023-02-06,4.0,2.1153634637594223,ok,
+final_test,lstm,Forum Istanbul,Books,2023-02-13,12.0,1.7915271073579788,ok,
+final_test,lstm,Forum Istanbul,Books,2023-02-20,15.0,1.5374056100845337,ok,
+final_test,lstm,Forum Istanbul,Books,2023-02-27,7.0,1.6102953255176544,ok,
+final_test,linear_regression,Forum Istanbul,Clothing,2023-02-06,38.0,47.40255439875995,ok,
+final_test,linear_regression,Forum Istanbul,Clothing,2023-02-13,67.0,52.4970681735711,ok,
+final_test,linear_regression,Forum Istanbul,Clothing,2023-02-20,45.0,46.08461431350924,ok,
+final_test,linear_regression,Forum Istanbul,Clothing,2023-02-27,31.0,43.30786250678612,ok,
+final_test,sarimax,Forum Istanbul,Clothing,2023-02-06,38.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3D147F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Clothing,2023-02-13,67.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3D147F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Clothing,2023-02-20,45.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3D147F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Clothing,2023-02-27,31.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3D147F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Clothing,2023-02-06,38.0,41.652707278728485,ok,
+final_test,lstm,Forum Istanbul,Clothing,2023-02-13,67.0,42.82012525200844,ok,
+final_test,lstm,Forum Istanbul,Clothing,2023-02-20,45.0,40.783417105674744,ok,
+final_test,lstm,Forum Istanbul,Clothing,2023-02-27,31.0,41.66190513968468,ok,
+final_test,linear_regression,Forum Istanbul,Cosmetics,2023-02-06,21.0,23.712544698634368,ok,
+final_test,linear_regression,Forum Istanbul,Cosmetics,2023-02-13,7.0,21.016770737084485,ok,
+final_test,linear_regression,Forum Istanbul,Cosmetics,2023-02-20,42.0,15.142615312872024,ok,
+final_test,linear_regression,Forum Istanbul,Cosmetics,2023-02-27,30.0,20.423650009379887,ok,
+final_test,sarimax,Forum Istanbul,Cosmetics,2023-02-06,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA60FE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Cosmetics,2023-02-13,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA60FE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Cosmetics,2023-02-20,42.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA60FE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Cosmetics,2023-02-27,30.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA60FE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Cosmetics,2023-02-06,21.0,11.087986141443254,ok,
+final_test,lstm,Forum Istanbul,Cosmetics,2023-02-13,7.0,12.69166272878647,ok,
+final_test,lstm,Forum Istanbul,Cosmetics,2023-02-20,42.0,16.855950474739075,ok,
+final_test,lstm,Forum Istanbul,Cosmetics,2023-02-27,30.0,18.02317488193512,ok,
+final_test,linear_regression,Forum Istanbul,Food & Beverage,2023-02-06,15.0,19.59664891491935,ok,
+final_test,linear_regression,Forum Istanbul,Food & Beverage,2023-02-13,17.0,18.226499750173055,ok,
+final_test,linear_regression,Forum Istanbul,Food & Beverage,2023-02-20,35.0,19.572729565286807,ok,
+final_test,linear_regression,Forum Istanbul,Food & Beverage,2023-02-27,13.0,17.361898756370977,ok,
+final_test,sarimax,Forum Istanbul,Food & Beverage,2023-02-06,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C39038720>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Food & Beverage,2023-02-13,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C39038720>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Food & Beverage,2023-02-20,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C39038720>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Food & Beverage,2023-02-27,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C39038720>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Food & Beverage,2023-02-06,15.0,16.398203492164612,ok,
+final_test,lstm,Forum Istanbul,Food & Beverage,2023-02-13,17.0,14.674737811088562,ok,
+final_test,lstm,Forum Istanbul,Food & Beverage,2023-02-20,35.0,11.921518206596375,ok,
+final_test,lstm,Forum Istanbul,Food & Beverage,2023-02-27,13.0,16.137739419937134,ok,
+final_test,linear_regression,Forum Istanbul,Shoes,2023-02-06,6.0,9.22852307095496,ok,
+final_test,linear_regression,Forum Istanbul,Shoes,2023-02-13,22.0,11.630266345997256,ok,
+final_test,linear_regression,Forum Istanbul,Shoes,2023-02-20,7.0,11.542742787822895,ok,
+final_test,linear_regression,Forum Istanbul,Shoes,2023-02-27,11.0,16.522538169316512,ok,
+final_test,sarimax,Forum Istanbul,Shoes,2023-02-06,6.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C44717F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Shoes,2023-02-13,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C44717F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Shoes,2023-02-20,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C44717F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Shoes,2023-02-27,11.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C44717F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Shoes,2023-02-06,6.0,5.782175272703171,ok,
+final_test,lstm,Forum Istanbul,Shoes,2023-02-13,22.0,8.065896719694138,ok,
+final_test,lstm,Forum Istanbul,Shoes,2023-02-20,7.0,11.207036912441254,ok,
+final_test,lstm,Forum Istanbul,Shoes,2023-02-27,11.0,13.408913433551788,ok,
+final_test,linear_regression,Forum Istanbul,Souvenir,2023-02-06,9.0,4.516835566750773,ok,
+final_test,linear_regression,Forum Istanbul,Souvenir,2023-02-13,0.0,9.107590428895357,ok,
+final_test,linear_regression,Forum Istanbul,Souvenir,2023-02-20,10.0,7.15475386816643,ok,
+final_test,linear_regression,Forum Istanbul,Souvenir,2023-02-27,2.0,7.680434160795177,ok,
+final_test,sarimax,Forum Istanbul,Souvenir,2023-02-06,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C443F8360>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Souvenir,2023-02-13,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C443F8360>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Souvenir,2023-02-20,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C443F8360>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Souvenir,2023-02-27,2.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C443F8360>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Souvenir,2023-02-06,9.0,11.601076483726501,ok,
+final_test,lstm,Forum Istanbul,Souvenir,2023-02-13,0.0,11.186102271080017,ok,
+final_test,lstm,Forum Istanbul,Souvenir,2023-02-20,10.0,12.024477928876877,ok,
+final_test,lstm,Forum Istanbul,Souvenir,2023-02-27,2.0,11.710088163614273,ok,
+final_test,linear_regression,Forum Istanbul,Technology,2023-02-06,0.0,7.061560438964915,ok,
+final_test,linear_regression,Forum Istanbul,Technology,2023-02-13,13.0,6.602978210380684,ok,
+final_test,linear_regression,Forum Istanbul,Technology,2023-02-20,4.0,6.995791393511587,ok,
+final_test,linear_regression,Forum Istanbul,Technology,2023-02-27,5.0,6.7992115555127395,ok,
+final_test,sarimax,Forum Istanbul,Technology,2023-02-06,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Technology,2023-02-13,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Technology,2023-02-20,4.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Technology,2023-02-27,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Technology,2023-02-06,0.0,4.049396052956581,ok,
+final_test,lstm,Forum Istanbul,Technology,2023-02-13,13.0,3.7397329956293106,ok,
+final_test,lstm,Forum Istanbul,Technology,2023-02-20,4.0,3.8032576590776443,ok,
+final_test,lstm,Forum Istanbul,Technology,2023-02-27,5.0,3.6250473260879517,ok,
+final_test,linear_regression,Forum Istanbul,Toys,2023-02-06,4.0,17.460175128949434,ok,
+final_test,linear_regression,Forum Istanbul,Toys,2023-02-13,14.0,13.314833813747303,ok,
+final_test,linear_regression,Forum Istanbul,Toys,2023-02-20,13.0,14.424706818192844,ok,
+final_test,linear_regression,Forum Istanbul,Toys,2023-02-27,10.0,10.807328051439214,ok,
+final_test,sarimax,Forum Istanbul,Toys,2023-02-06,4.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C7EB8BD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Toys,2023-02-13,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C7EB8BD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Toys,2023-02-20,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C7EB8BD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Forum Istanbul,Toys,2023-02-27,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C7EB8BD80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Forum Istanbul,Toys,2023-02-06,4.0,12.625975608825684,ok,
+final_test,lstm,Forum Istanbul,Toys,2023-02-13,14.0,13.383054733276367,ok,
+final_test,lstm,Forum Istanbul,Toys,2023-02-20,13.0,5.22509765625,ok,
+final_test,lstm,Forum Istanbul,Toys,2023-02-27,10.0,9.316536903381348,ok,
+final_test,linear_regression,Istinye Park,Books,2023-02-06,13.0,10.66604877979671,ok,
+final_test,linear_regression,Istinye Park,Books,2023-02-13,18.0,13.722292354625846,ok,
+final_test,linear_regression,Istinye Park,Books,2023-02-20,12.0,11.908897233409526,ok,
+final_test,linear_regression,Istinye Park,Books,2023-02-27,2.0,12.5814497900744,ok,
+final_test,sarimax,Istinye Park,Books,2023-02-06,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989ECA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Books,2023-02-13,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989ECA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Books,2023-02-20,12.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989ECA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Books,2023-02-27,2.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C4989ECA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Books,2023-02-06,13.0,6.502254903316498,ok,
+final_test,lstm,Istinye Park,Books,2023-02-13,18.0,3.8368993401527405,ok,
+final_test,lstm,Istinye Park,Books,2023-02-20,12.0,3.2418210208415985,ok,
+final_test,lstm,Istinye Park,Books,2023-02-27,2.0,4.209337204694748,ok,
+final_test,linear_regression,Istinye Park,Clothing,2023-02-06,83.0,91.75742087418897,ok,
+final_test,linear_regression,Istinye Park,Clothing,2023-02-13,111.0,93.84152177555104,ok,
+final_test,linear_regression,Istinye Park,Clothing,2023-02-20,102.0,93.63677226566566,ok,
+final_test,linear_regression,Istinye Park,Clothing,2023-02-27,64.0,93.5057249660772,ok,
+final_test,sarimax,Istinye Park,Clothing,2023-02-06,83.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Clothing,2023-02-13,111.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Clothing,2023-02-20,102.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Clothing,2023-02-27,64.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Clothing,2023-02-06,83.0,85.87408018112183,ok,
+final_test,lstm,Istinye Park,Clothing,2023-02-13,111.0,81.45690631866455,ok,
+final_test,lstm,Istinye Park,Clothing,2023-02-20,102.0,80.9030122756958,ok,
+final_test,lstm,Istinye Park,Clothing,2023-02-27,64.0,79.19619512557983,ok,
+final_test,linear_regression,Istinye Park,Cosmetics,2023-02-06,32.0,37.56497628013956,ok,
+final_test,linear_regression,Istinye Park,Cosmetics,2023-02-13,39.0,33.950618377513514,ok,
+final_test,linear_regression,Istinye Park,Cosmetics,2023-02-20,69.0,34.910177377014506,ok,
+final_test,linear_regression,Istinye Park,Cosmetics,2023-02-27,35.0,35.49908979873916,ok,
+final_test,sarimax,Istinye Park,Cosmetics,2023-02-06,32.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Cosmetics,2023-02-13,39.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Cosmetics,2023-02-20,69.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Cosmetics,2023-02-27,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C3FA61A80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Cosmetics,2023-02-06,32.0,30.322005718946453,ok,
+final_test,lstm,Istinye Park,Cosmetics,2023-02-13,39.0,27.13284701108932,ok,
+final_test,lstm,Istinye Park,Cosmetics,2023-02-20,69.0,21.795995652675625,ok,
+final_test,lstm,Istinye Park,Cosmetics,2023-02-27,35.0,19.796476155519482,ok,
+final_test,linear_regression,Istinye Park,Food & Beverage,2023-02-06,49.0,39.79257023183221,ok,
+final_test,linear_regression,Istinye Park,Food & Beverage,2023-02-13,25.0,39.58624361908888,ok,
+final_test,linear_regression,Istinye Park,Food & Beverage,2023-02-20,65.0,39.25806166196897,ok,
+final_test,linear_regression,Istinye Park,Food & Beverage,2023-02-27,42.0,40.04420513897639,ok,
+final_test,sarimax,Istinye Park,Food & Beverage,2023-02-06,49.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C855AB420>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Food & Beverage,2023-02-13,25.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C855AB420>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Food & Beverage,2023-02-20,65.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C855AB420>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Food & Beverage,2023-02-27,42.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C855AB420>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Food & Beverage,2023-02-06,49.0,42.04641807079316,ok,
+final_test,lstm,Istinye Park,Food & Beverage,2023-02-13,25.0,34.699662685394294,ok,
+final_test,lstm,Istinye Park,Food & Beverage,2023-02-20,65.0,32.1089688539505,ok,
+final_test,lstm,Istinye Park,Food & Beverage,2023-02-27,42.0,30.752007126808167,ok,
+final_test,linear_regression,Istinye Park,Shoes,2023-02-06,21.0,31.71347131480663,ok,
+final_test,linear_regression,Istinye Park,Shoes,2023-02-13,29.0,25.770096050386996,ok,
+final_test,linear_regression,Istinye Park,Shoes,2023-02-20,31.0,31.079851573029238,ok,
+final_test,linear_regression,Istinye Park,Shoes,2023-02-27,22.0,31.70914046939529,ok,
+final_test,sarimax,Istinye Park,Shoes,2023-02-06,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Shoes,2023-02-13,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Shoes,2023-02-20,31.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Shoes,2023-02-27,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Shoes,2023-02-06,21.0,26.563468754291538,ok,
+final_test,lstm,Istinye Park,Shoes,2023-02-13,29.0,27.73975491523743,ok,
+final_test,lstm,Istinye Park,Shoes,2023-02-20,31.0,26.350991755723957,ok,
+final_test,lstm,Istinye Park,Shoes,2023-02-27,22.0,30.351300060749058,ok,
+final_test,linear_regression,Istinye Park,Souvenir,2023-02-06,9.0,15.627978204062304,ok,
+final_test,linear_regression,Istinye Park,Souvenir,2023-02-13,6.0,14.086451408497506,ok,
+final_test,linear_regression,Istinye Park,Souvenir,2023-02-20,21.0,14.85673882477123,ok,
+final_test,linear_regression,Istinye Park,Souvenir,2023-02-27,14.0,13.933328135683068,ok,
+final_test,sarimax,Istinye Park,Souvenir,2023-02-06,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Souvenir,2023-02-13,6.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Souvenir,2023-02-20,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Souvenir,2023-02-27,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87D2FA60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Souvenir,2023-02-06,9.0,14.003813296556473,ok,
+final_test,lstm,Istinye Park,Souvenir,2023-02-13,6.0,11.915496051311493,ok,
+final_test,lstm,Istinye Park,Souvenir,2023-02-20,21.0,12.248915284872055,ok,
+final_test,lstm,Istinye Park,Souvenir,2023-02-27,14.0,11.89028462767601,ok,
+final_test,linear_regression,Istinye Park,Technology,2023-02-06,18.0,14.619563391096774,ok,
+final_test,linear_regression,Istinye Park,Technology,2023-02-13,11.0,9.798085212106841,ok,
+final_test,linear_regression,Istinye Park,Technology,2023-02-20,14.0,13.77633530795992,ok,
+final_test,linear_regression,Istinye Park,Technology,2023-02-27,13.0,11.212404818826919,ok,
+final_test,sarimax,Istinye Park,Technology,2023-02-06,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84860>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Technology,2023-02-13,11.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84860>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Technology,2023-02-20,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84860>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Technology,2023-02-27,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84860>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Technology,2023-02-06,18.0,15.959907174110413,ok,
+final_test,lstm,Istinye Park,Technology,2023-02-13,11.0,15.828020751476288,ok,
+final_test,lstm,Istinye Park,Technology,2023-02-20,14.0,14.577162742614746,ok,
+final_test,lstm,Istinye Park,Technology,2023-02-27,13.0,13.088777244091034,ok,
+final_test,linear_regression,Istinye Park,Toys,2023-02-06,10.0,32.967814241242166,ok,
+final_test,linear_regression,Istinye Park,Toys,2023-02-13,22.0,25.752537921183418,ok,
+final_test,linear_regression,Istinye Park,Toys,2023-02-20,25.0,33.421132122346094,ok,
+final_test,linear_regression,Istinye Park,Toys,2023-02-27,35.0,29.83424084797608,ok,
+final_test,sarimax,Istinye Park,Toys,2023-02-06,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37C682C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Toys,2023-02-13,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37C682C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Toys,2023-02-20,25.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37C682C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Istinye Park,Toys,2023-02-27,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C37C682C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Istinye Park,Toys,2023-02-06,10.0,13.36040285229683,ok,
+final_test,lstm,Istinye Park,Toys,2023-02-13,22.0,16.97402861714363,ok,
+final_test,lstm,Istinye Park,Toys,2023-02-20,25.0,11.708898097276688,ok,
+final_test,lstm,Istinye Park,Toys,2023-02-27,35.0,7.921805281192064,ok,
+final_test,linear_regression,Kanyon,Books,2023-02-06,16.0,25.169556356809828,ok,
+final_test,linear_regression,Kanyon,Books,2023-02-13,36.0,22.054446692096647,ok,
+final_test,linear_regression,Kanyon,Books,2023-02-20,22.0,24.97013198379461,ok,
+final_test,linear_regression,Kanyon,Books,2023-02-27,26.0,24.351414920851592,ok,
+final_test,sarimax,Kanyon,Books,2023-02-06,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Books,2023-02-13,36.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Books,2023-02-20,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Books,2023-02-27,26.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Books,2023-02-06,16.0,30.989782303571697,ok,
+final_test,lstm,Kanyon,Books,2023-02-13,36.0,27.355427622795105,ok,
+final_test,lstm,Kanyon,Books,2023-02-20,22.0,26.86996218562126,ok,
+final_test,lstm,Kanyon,Books,2023-02-27,26.0,22.96492639183998,ok,
+final_test,linear_regression,Kanyon,Clothing,2023-02-06,196.0,185.34395365299798,ok,
+final_test,linear_regression,Kanyon,Clothing,2023-02-13,217.0,175.74648772000683,ok,
+final_test,linear_regression,Kanyon,Clothing,2023-02-20,178.0,180.4104083160898,ok,
+final_test,linear_regression,Kanyon,Clothing,2023-02-27,228.0,180.85630068739488,ok,
+final_test,sarimax,Kanyon,Clothing,2023-02-06,196.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Clothing,2023-02-13,217.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Clothing,2023-02-20,178.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Clothing,2023-02-27,228.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8E752DE0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Clothing,2023-02-06,196.0,184.308456659317,ok,
+final_test,lstm,Kanyon,Clothing,2023-02-13,217.0,170.59598028659818,ok,
+final_test,lstm,Kanyon,Clothing,2023-02-20,178.0,167.03296923637387,ok,
+final_test,lstm,Kanyon,Clothing,2023-02-27,228.0,167.80529272556302,ok,
+final_test,linear_regression,Kanyon,Cosmetics,2023-02-06,75.0,81.30232742848234,ok,
+final_test,linear_regression,Kanyon,Cosmetics,2023-02-13,114.0,81.56969388970732,ok,
+final_test,linear_regression,Kanyon,Cosmetics,2023-02-20,99.0,77.04377620147613,ok,
+final_test,linear_regression,Kanyon,Cosmetics,2023-02-27,87.0,80.1232927575575,ok,
+final_test,sarimax,Kanyon,Cosmetics,2023-02-06,75.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C921647C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Cosmetics,2023-02-13,114.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C921647C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Cosmetics,2023-02-20,99.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C921647C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Cosmetics,2023-02-27,87.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C921647C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Cosmetics,2023-02-06,75.0,91.28691297769547,ok,
+final_test,lstm,Kanyon,Cosmetics,2023-02-13,114.0,89.98935765028,ok,
+final_test,lstm,Kanyon,Cosmetics,2023-02-20,99.0,89.78064638376236,ok,
+final_test,lstm,Kanyon,Cosmetics,2023-02-27,87.0,97.97186183929442,ok,
+final_test,linear_regression,Kanyon,Food & Beverage,2023-02-06,77.0,74.84544448791046,ok,
+final_test,linear_regression,Kanyon,Food & Beverage,2023-02-13,54.0,76.25503830501083,ok,
+final_test,linear_regression,Kanyon,Food & Beverage,2023-02-20,79.0,75.74477890048675,ok,
+final_test,linear_regression,Kanyon,Food & Beverage,2023-02-27,87.0,80.71317793870601,ok,
+final_test,sarimax,Kanyon,Food & Beverage,2023-02-06,77.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C94E6FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Food & Beverage,2023-02-13,54.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C94E6FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Food & Beverage,2023-02-20,79.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C94E6FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Food & Beverage,2023-02-27,87.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C94E6FE20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Food & Beverage,2023-02-06,77.0,81.76874136924742,ok,
+final_test,lstm,Kanyon,Food & Beverage,2023-02-13,54.0,76.30557352304459,ok,
+final_test,lstm,Kanyon,Food & Beverage,2023-02-20,79.0,75.75396436452866,ok,
+final_test,lstm,Kanyon,Food & Beverage,2023-02-27,87.0,71.39616274833679,ok,
+final_test,linear_regression,Kanyon,Shoes,2023-02-06,42.0,56.59196385559437,ok,
+final_test,linear_regression,Kanyon,Shoes,2023-02-13,39.0,50.97700533056353,ok,
+final_test,linear_regression,Kanyon,Shoes,2023-02-20,38.0,53.35603176892028,ok,
+final_test,linear_regression,Kanyon,Shoes,2023-02-27,52.0,51.33760718723737,ok,
+final_test,sarimax,Kanyon,Shoes,2023-02-06,42.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Shoes,2023-02-13,39.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Shoes,2023-02-20,38.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Shoes,2023-02-27,52.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Shoes,2023-02-06,42.0,56.24070703983306,ok,
+final_test,lstm,Kanyon,Shoes,2023-02-13,39.0,52.42870241403579,ok,
+final_test,lstm,Kanyon,Shoes,2023-02-20,38.0,53.804496824741356,ok,
+final_test,lstm,Kanyon,Shoes,2023-02-27,52.0,55.83301126956939,ok,
+final_test,linear_regression,Kanyon,Souvenir,2023-02-06,36.0,29.626500961550335,ok,
+final_test,linear_regression,Kanyon,Souvenir,2023-02-13,26.0,31.811719700321795,ok,
+final_test,linear_regression,Kanyon,Souvenir,2023-02-20,19.0,29.505405979988808,ok,
+final_test,linear_regression,Kanyon,Souvenir,2023-02-27,21.0,28.616387856400976,ok,
+final_test,sarimax,Kanyon,Souvenir,2023-02-06,36.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Souvenir,2023-02-13,26.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Souvenir,2023-02-20,19.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Souvenir,2023-02-27,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9880BBA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Souvenir,2023-02-06,36.0,21.716874063014984,ok,
+final_test,lstm,Kanyon,Souvenir,2023-02-13,26.0,24.73698478937149,ok,
+final_test,lstm,Kanyon,Souvenir,2023-02-20,19.0,24.314431071281433,ok,
+final_test,lstm,Kanyon,Souvenir,2023-02-27,21.0,25.91079694032669,ok,
+final_test,linear_regression,Kanyon,Technology,2023-02-06,21.0,25.963581371449983,ok,
+final_test,linear_regression,Kanyon,Technology,2023-02-13,44.0,23.957918681748414,ok,
+final_test,linear_regression,Kanyon,Technology,2023-02-20,53.0,26.457284434746512,ok,
+final_test,linear_regression,Kanyon,Technology,2023-02-27,21.0,19.0309125664675,ok,
+final_test,sarimax,Kanyon,Technology,2023-02-06,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84540>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Technology,2023-02-13,44.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84540>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Technology,2023-02-20,53.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84540>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Technology,2023-02-27,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C87A84540>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Technology,2023-02-06,21.0,11.048243045806887,ok,
+final_test,lstm,Kanyon,Technology,2023-02-13,44.0,10.787483215332033,ok,
+final_test,lstm,Kanyon,Technology,2023-02-20,53.0,17.144007086753845,ok,
+final_test,lstm,Kanyon,Technology,2023-02-27,21.0,14.751692593097689,ok,
+final_test,linear_regression,Kanyon,Toys,2023-02-06,48.0,41.244780431525555,ok,
+final_test,linear_regression,Kanyon,Toys,2023-02-13,25.0,51.91990883448786,ok,
+final_test,linear_regression,Kanyon,Toys,2023-02-20,49.0,46.23759101746286,ok,
+final_test,linear_regression,Kanyon,Toys,2023-02-27,38.0,50.343056883879626,ok,
+final_test,sarimax,Kanyon,Toys,2023-02-06,48.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9383E660>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Toys,2023-02-13,25.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9383E660>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Toys,2023-02-20,49.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9383E660>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Kanyon,Toys,2023-02-27,38.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9383E660>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Kanyon,Toys,2023-02-06,48.0,21.369812205433846,ok,
+final_test,lstm,Kanyon,Toys,2023-02-13,25.0,24.928960889577866,ok,
+final_test,lstm,Kanyon,Toys,2023-02-20,49.0,25.647019028663635,ok,
+final_test,lstm,Kanyon,Toys,2023-02-27,38.0,28.122738003730774,ok,
+final_test,linear_regression,Mall of Istanbul,Books,2023-02-06,35.0,24.32235446499468,ok,
+final_test,linear_regression,Mall of Istanbul,Books,2023-02-13,22.0,28.577616585319703,ok,
+final_test,linear_regression,Mall of Istanbul,Books,2023-02-20,36.0,28.217846569524752,ok,
+final_test,linear_regression,Mall of Istanbul,Books,2023-02-27,16.0,29.64892029227308,ok,
+final_test,sarimax,Mall of Istanbul,Books,2023-02-06,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Books,2023-02-13,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Books,2023-02-20,36.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Books,2023-02-27,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Books,2023-02-06,35.0,18.56192111968994,ok,
+final_test,lstm,Mall of Istanbul,Books,2023-02-13,22.0,18.48587656021118,ok,
+final_test,lstm,Mall of Istanbul,Books,2023-02-20,36.0,25.820706337690353,ok,
+final_test,lstm,Mall of Istanbul,Books,2023-02-27,16.0,22.53618758916855,ok,
+final_test,linear_regression,Mall of Istanbul,Clothing,2023-02-06,182.0,177.4883938340746,ok,
+final_test,linear_regression,Mall of Istanbul,Clothing,2023-02-13,202.0,182.05625493270796,ok,
+final_test,linear_regression,Mall of Istanbul,Clothing,2023-02-20,179.0,184.6689082767553,ok,
+final_test,linear_regression,Mall of Istanbul,Clothing,2023-02-27,203.0,184.15773983728803,ok,
+final_test,sarimax,Mall of Istanbul,Clothing,2023-02-06,182.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Clothing,2023-02-13,202.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Clothing,2023-02-20,179.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Clothing,2023-02-27,203.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Clothing,2023-02-06,182.0,174.09672057628632,ok,
+final_test,lstm,Mall of Istanbul,Clothing,2023-02-13,202.0,169.85997831821442,ok,
+final_test,lstm,Mall of Istanbul,Clothing,2023-02-20,179.0,166.27291268110275,ok,
+final_test,lstm,Mall of Istanbul,Clothing,2023-02-27,203.0,164.11814464628696,ok,
+final_test,linear_regression,Mall of Istanbul,Cosmetics,2023-02-06,54.0,85.44110246812181,ok,
+final_test,linear_regression,Mall of Istanbul,Cosmetics,2023-02-13,84.0,83.20588443954134,ok,
+final_test,linear_regression,Mall of Istanbul,Cosmetics,2023-02-20,63.0,79.25869780375072,ok,
+final_test,linear_regression,Mall of Istanbul,Cosmetics,2023-02-27,86.0,79.50629802334092,ok,
+final_test,sarimax,Mall of Istanbul,Cosmetics,2023-02-06,54.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Cosmetics,2023-02-13,84.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Cosmetics,2023-02-20,63.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Cosmetics,2023-02-27,86.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C8CE18A40>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Cosmetics,2023-02-06,54.0,72.96595504879951,ok,
+final_test,lstm,Mall of Istanbul,Cosmetics,2023-02-13,84.0,78.25574463605881,ok,
+final_test,lstm,Mall of Istanbul,Cosmetics,2023-02-20,63.0,67.09108917415142,ok,
+final_test,lstm,Mall of Istanbul,Cosmetics,2023-02-27,86.0,76.60332551598549,ok,
+final_test,linear_regression,Mall of Istanbul,Food & Beverage,2023-02-06,102.0,64.27372410513888,ok,
+final_test,linear_regression,Mall of Istanbul,Food & Beverage,2023-02-13,89.0,72.44000065811244,ok,
+final_test,linear_regression,Mall of Istanbul,Food & Beverage,2023-02-20,66.0,80.1484519534788,ok,
+final_test,linear_regression,Mall of Istanbul,Food & Beverage,2023-02-27,60.0,67.04296966675132,ok,
+final_test,sarimax,Mall of Istanbul,Food & Beverage,2023-02-06,102.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Food & Beverage,2023-02-13,89.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Food & Beverage,2023-02-20,66.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Food & Beverage,2023-02-27,60.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Food & Beverage,2023-02-06,102.0,70.21602880954742,ok,
+final_test,lstm,Mall of Istanbul,Food & Beverage,2023-02-13,89.0,73.23475742340088,ok,
+final_test,lstm,Mall of Istanbul,Food & Beverage,2023-02-20,66.0,71.32028603553772,ok,
+final_test,lstm,Mall of Istanbul,Food & Beverage,2023-02-27,60.0,74.31821250915527,ok,
+final_test,linear_regression,Mall of Istanbul,Shoes,2023-02-06,78.0,51.266034781094895,ok,
+final_test,linear_regression,Mall of Istanbul,Shoes,2023-02-13,60.0,63.53864691034646,ok,
+final_test,linear_regression,Mall of Istanbul,Shoes,2023-02-20,38.0,57.277426824098,ok,
+final_test,linear_regression,Mall of Istanbul,Shoes,2023-02-27,44.0,60.88131840977415,ok,
+final_test,sarimax,Mall of Istanbul,Shoes,2023-02-06,78.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Shoes,2023-02-13,60.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Shoes,2023-02-20,38.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Shoes,2023-02-27,44.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA20780E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Shoes,2023-02-06,78.0,61.272829532623284,ok,
+final_test,lstm,Mall of Istanbul,Shoes,2023-02-13,60.0,61.58895301818847,ok,
+final_test,lstm,Mall of Istanbul,Shoes,2023-02-20,38.0,60.74891185760497,ok,
+final_test,lstm,Mall of Istanbul,Shoes,2023-02-27,44.0,57.17727351188659,ok,
+final_test,linear_regression,Mall of Istanbul,Souvenir,2023-02-06,30.0,26.239368194407547,ok,
+final_test,linear_regression,Mall of Istanbul,Souvenir,2023-02-13,33.0,26.160437144905405,ok,
+final_test,linear_regression,Mall of Istanbul,Souvenir,2023-02-20,29.0,25.66075210800818,ok,
+final_test,linear_regression,Mall of Istanbul,Souvenir,2023-02-27,25.0,25.27745285939975,ok,
+final_test,sarimax,Mall of Istanbul,Souvenir,2023-02-06,30.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA6C80B80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Souvenir,2023-02-13,33.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA6C80B80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Souvenir,2023-02-20,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA6C80B80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Souvenir,2023-02-27,25.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA6C80B80>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Souvenir,2023-02-06,30.0,18.656592190265656,ok,
+final_test,lstm,Mall of Istanbul,Souvenir,2023-02-13,33.0,19.814989864826202,ok,
+final_test,lstm,Mall of Istanbul,Souvenir,2023-02-20,29.0,24.797386556863785,ok,
+final_test,lstm,Mall of Istanbul,Souvenir,2023-02-27,25.0,29.65455424785614,ok,
+final_test,linear_regression,Mall of Istanbul,Technology,2023-02-06,38.0,25.008402097633017,ok,
+final_test,linear_regression,Mall of Istanbul,Technology,2023-02-13,20.0,25.285586176171527,ok,
+final_test,linear_regression,Mall of Istanbul,Technology,2023-02-20,28.0,23.723036973845304,ok,
+final_test,linear_regression,Mall of Istanbul,Technology,2023-02-27,34.0,28.02602854464483,ok,
+final_test,sarimax,Mall of Istanbul,Technology,2023-02-06,38.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAAAC3E20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Technology,2023-02-13,20.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAAAC3E20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Technology,2023-02-20,28.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAAAC3E20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Technology,2023-02-27,34.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAAAC3E20>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Technology,2023-02-06,38.0,21.70384842157364,ok,
+final_test,lstm,Mall of Istanbul,Technology,2023-02-13,20.0,18.172811925411224,ok,
+final_test,lstm,Mall of Istanbul,Technology,2023-02-20,28.0,18.865810304880142,ok,
+final_test,lstm,Mall of Istanbul,Technology,2023-02-27,34.0,22.2739520072937,ok,
+final_test,linear_regression,Mall of Istanbul,Toys,2023-02-06,65.0,53.04898926272826,ok,
+final_test,linear_regression,Mall of Istanbul,Toys,2023-02-13,62.0,44.30406896049956,ok,
+final_test,linear_regression,Mall of Istanbul,Toys,2023-02-20,65.0,59.05619223162491,ok,
+final_test,linear_regression,Mall of Istanbul,Toys,2023-02-27,42.0,52.99716954174349,ok,
+final_test,sarimax,Mall of Istanbul,Toys,2023-02-06,65.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Toys,2023-02-13,62.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Toys,2023-02-20,65.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Mall of Istanbul,Toys,2023-02-27,42.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Mall of Istanbul,Toys,2023-02-06,65.0,47.32235145568848,ok,
+final_test,lstm,Mall of Istanbul,Toys,2023-02-13,62.0,38.69166946411133,ok,
+final_test,lstm,Mall of Istanbul,Toys,2023-02-20,65.0,49.52426528930664,ok,
+final_test,lstm,Mall of Istanbul,Toys,2023-02-27,42.0,50.25654983520508,ok,
+final_test,linear_regression,Metrocity,Books,2023-02-06,29.0,21.56808831790427,ok,
+final_test,linear_regression,Metrocity,Books,2023-02-13,16.0,21.09831671704015,ok,
+final_test,linear_regression,Metrocity,Books,2023-02-20,15.0,18.43808044017438,ok,
+final_test,linear_regression,Metrocity,Books,2023-02-27,26.0,21.434295250773303,ok,
+final_test,sarimax,Metrocity,Books,2023-02-06,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Books,2023-02-13,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Books,2023-02-20,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Books,2023-02-27,26.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CA32BFEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Books,2023-02-06,29.0,19.24961471557617,ok,
+final_test,lstm,Metrocity,Books,2023-02-13,16.0,19.15418410301208,ok,
+final_test,lstm,Metrocity,Books,2023-02-20,15.0,20.48122429847717,ok,
+final_test,lstm,Metrocity,Books,2023-02-27,26.0,20.834510564804074,ok,
+final_test,linear_regression,Metrocity,Clothing,2023-02-06,117.0,128.02282032961173,ok,
+final_test,linear_regression,Metrocity,Clothing,2023-02-13,131.0,133.70927408192563,ok,
+final_test,linear_regression,Metrocity,Clothing,2023-02-20,177.0,130.47593503139996,ok,
+final_test,linear_regression,Metrocity,Clothing,2023-02-27,110.0,121.35039636578333,ok,
+final_test,sarimax,Metrocity,Clothing,2023-02-06,117.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Clothing,2023-02-13,131.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Clothing,2023-02-20,177.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Clothing,2023-02-27,110.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Clothing,2023-02-06,117.0,123.79444572329521,ok,
+final_test,lstm,Metrocity,Clothing,2023-02-13,131.0,121.98864471912384,ok,
+final_test,lstm,Metrocity,Clothing,2023-02-20,177.0,118.4084117859602,ok,
+final_test,lstm,Metrocity,Clothing,2023-02-27,110.0,117.45234203338623,ok,
+final_test,linear_regression,Metrocity,Cosmetics,2023-02-06,68.0,67.45605380610206,ok,
+final_test,linear_regression,Metrocity,Cosmetics,2023-02-13,56.0,62.27496145028545,ok,
+final_test,linear_regression,Metrocity,Cosmetics,2023-02-20,57.0,65.78708214548223,ok,
+final_test,linear_regression,Metrocity,Cosmetics,2023-02-27,54.0,56.594264988939244,ok,
+final_test,sarimax,Metrocity,Cosmetics,2023-02-06,68.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Cosmetics,2023-02-13,56.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Cosmetics,2023-02-20,57.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Cosmetics,2023-02-27,54.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011C9761F600>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Cosmetics,2023-02-06,68.0,44.05278259515763,ok,
+final_test,lstm,Metrocity,Cosmetics,2023-02-13,56.0,45.26866495609284,ok,
+final_test,lstm,Metrocity,Cosmetics,2023-02-20,57.0,44.58958354592324,ok,
+final_test,lstm,Metrocity,Cosmetics,2023-02-27,54.0,39.29115603864193,ok,
+final_test,linear_regression,Metrocity,Food & Beverage,2023-02-06,67.0,53.05372827364008,ok,
+final_test,linear_regression,Metrocity,Food & Beverage,2023-02-13,61.0,57.33274265750763,ok,
+final_test,linear_regression,Metrocity,Food & Beverage,2023-02-20,61.0,58.76647144095609,ok,
+final_test,linear_regression,Metrocity,Food & Beverage,2023-02-27,49.0,61.11219153389179,ok,
+final_test,sarimax,Metrocity,Food & Beverage,2023-02-06,67.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB058FEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Food & Beverage,2023-02-13,61.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB058FEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Food & Beverage,2023-02-20,61.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB058FEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Food & Beverage,2023-02-27,49.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB058FEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Food & Beverage,2023-02-06,67.0,57.54215469956398,ok,
+final_test,lstm,Metrocity,Food & Beverage,2023-02-13,61.0,53.88317194581032,ok,
+final_test,lstm,Metrocity,Food & Beverage,2023-02-20,61.0,54.22306168079376,ok,
+final_test,lstm,Metrocity,Food & Beverage,2023-02-27,49.0,53.951313227415085,ok,
+final_test,linear_regression,Metrocity,Shoes,2023-02-06,59.0,36.91040642260484,ok,
+final_test,linear_regression,Metrocity,Shoes,2023-02-13,47.0,37.457916618092135,ok,
+final_test,linear_regression,Metrocity,Shoes,2023-02-20,67.0,30.49999570118644,ok,
+final_test,linear_regression,Metrocity,Shoes,2023-02-27,49.0,31.2373284527526,ok,
+final_test,sarimax,Metrocity,Shoes,2023-02-06,59.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB1AA8220>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Shoes,2023-02-13,47.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB1AA8220>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Shoes,2023-02-20,67.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB1AA8220>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Shoes,2023-02-27,49.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB1AA8220>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Shoes,2023-02-06,59.0,30.55783534049988,ok,
+final_test,lstm,Metrocity,Shoes,2023-02-13,47.0,34.11021304130555,ok,
+final_test,lstm,Metrocity,Shoes,2023-02-20,67.0,29.415734767913822,ok,
+final_test,lstm,Metrocity,Shoes,2023-02-27,49.0,31.02005219459534,ok,
+final_test,linear_regression,Metrocity,Souvenir,2023-02-06,28.0,17.007469427208353,ok,
+final_test,linear_regression,Metrocity,Souvenir,2023-02-13,19.0,19.680416243056076,ok,
+final_test,linear_regression,Metrocity,Souvenir,2023-02-20,24.0,19.31749814669513,ok,
+final_test,linear_regression,Metrocity,Souvenir,2023-02-27,24.0,19.17889101868646,ok,
+final_test,sarimax,Metrocity,Souvenir,2023-02-06,28.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Souvenir,2023-02-13,19.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Souvenir,2023-02-20,24.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Souvenir,2023-02-27,24.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Souvenir,2023-02-06,28.0,14.241033464670181,ok,
+final_test,lstm,Metrocity,Souvenir,2023-02-13,19.0,11.275444567203522,ok,
+final_test,lstm,Metrocity,Souvenir,2023-02-20,24.0,15.377976536750793,ok,
+final_test,lstm,Metrocity,Souvenir,2023-02-27,24.0,18.642903864383698,ok,
+final_test,linear_regression,Metrocity,Technology,2023-02-06,14.0,20.568186552143082,ok,
+final_test,linear_regression,Metrocity,Technology,2023-02-13,0.0,17.90407847270611,ok,
+final_test,linear_regression,Metrocity,Technology,2023-02-20,43.0,17.56563499514946,ok,
+final_test,linear_regression,Metrocity,Technology,2023-02-27,10.0,20.973137569223184,ok,
+final_test,sarimax,Metrocity,Technology,2023-02-06,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Technology,2023-02-13,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Technology,2023-02-20,43.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Technology,2023-02-27,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB575B880>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Technology,2023-02-06,14.0,16.35319471359253,ok,
+final_test,lstm,Metrocity,Technology,2023-02-13,0.0,14.092597842216492,ok,
+final_test,lstm,Metrocity,Technology,2023-02-20,43.0,16.211628794670105,ok,
+final_test,lstm,Metrocity,Technology,2023-02-27,10.0,17.4831600189209,ok,
+final_test,linear_regression,Metrocity,Toys,2023-02-06,42.0,36.1810586614407,ok,
+final_test,linear_regression,Metrocity,Toys,2023-02-13,35.0,38.045988662787465,ok,
+final_test,linear_regression,Metrocity,Toys,2023-02-20,56.0,43.007460012037626,ok,
+final_test,linear_regression,Metrocity,Toys,2023-02-27,17.0,37.357120258067994,ok,
+final_test,sarimax,Metrocity,Toys,2023-02-06,42.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB9C03F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Toys,2023-02-13,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB9C03F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Toys,2023-02-20,56.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB9C03F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metrocity,Toys,2023-02-27,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB9C03F60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metrocity,Toys,2023-02-06,42.0,42.04381161928177,ok,
+final_test,lstm,Metrocity,Toys,2023-02-13,35.0,48.78056627511978,ok,
+final_test,lstm,Metrocity,Toys,2023-02-20,56.0,48.91447412967682,ok,
+final_test,lstm,Metrocity,Toys,2023-02-27,17.0,43.18300241231918,ok,
+final_test,linear_regression,Metropol AVM,Books,2023-02-06,13.0,10.105499226892682,ok,
+final_test,linear_regression,Metropol AVM,Books,2023-02-13,21.0,10.605136970365805,ok,
+final_test,linear_regression,Metropol AVM,Books,2023-02-20,7.0,10.85946750840534,ok,
+final_test,linear_regression,Metropol AVM,Books,2023-02-27,10.0,10.65661850795268,ok,
+final_test,sarimax,Metropol AVM,Books,2023-02-06,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Books,2023-02-13,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Books,2023-02-20,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Books,2023-02-27,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Books,2023-02-06,13.0,18.156099915504456,ok,
+final_test,lstm,Metropol AVM,Books,2023-02-13,21.0,19.245530426502228,ok,
+final_test,lstm,Metropol AVM,Books,2023-02-20,7.0,16.73476767539978,ok,
+final_test,lstm,Metropol AVM,Books,2023-02-27,10.0,13.537957191467285,ok,
+final_test,linear_regression,Metropol AVM,Clothing,2023-02-06,91.0,88.96457732552513,ok,
+final_test,linear_regression,Metropol AVM,Clothing,2023-02-13,97.0,94.0542304703429,ok,
+final_test,linear_regression,Metropol AVM,Clothing,2023-02-20,89.0,92.66681283710207,ok,
+final_test,linear_regression,Metropol AVM,Clothing,2023-02-27,102.0,90.70165948742087,ok,
+final_test,sarimax,Metropol AVM,Clothing,2023-02-06,91.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Clothing,2023-02-13,97.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Clothing,2023-02-20,89.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Clothing,2023-02-27,102.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBBD45DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Clothing,2023-02-06,91.0,84.69716185331345,ok,
+final_test,lstm,Metropol AVM,Clothing,2023-02-13,97.0,90.17716461420059,ok,
+final_test,lstm,Metropol AVM,Clothing,2023-02-20,89.0,95.76571249961853,ok,
+final_test,lstm,Metropol AVM,Clothing,2023-02-27,102.0,95.64106303453445,ok,
+final_test,linear_regression,Metropol AVM,Cosmetics,2023-02-06,35.0,45.328920245801946,ok,
+final_test,linear_regression,Metropol AVM,Cosmetics,2023-02-13,51.0,44.155606616393015,ok,
+final_test,linear_regression,Metropol AVM,Cosmetics,2023-02-20,24.0,42.41271743960155,ok,
+final_test,linear_regression,Metropol AVM,Cosmetics,2023-02-27,49.0,41.799588940601375,ok,
+final_test,sarimax,Metropol AVM,Cosmetics,2023-02-06,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBD2C5760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Cosmetics,2023-02-13,51.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBD2C5760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Cosmetics,2023-02-20,24.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBD2C5760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Cosmetics,2023-02-27,49.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBD2C5760>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Cosmetics,2023-02-06,35.0,26.761253833770752,ok,
+final_test,lstm,Metropol AVM,Cosmetics,2023-02-13,51.0,39.275736570358276,ok,
+final_test,lstm,Metropol AVM,Cosmetics,2023-02-20,24.0,38.67753064632416,ok,
+final_test,lstm,Metropol AVM,Cosmetics,2023-02-27,49.0,31.2353698015213,ok,
+final_test,linear_regression,Metropol AVM,Food & Beverage,2023-02-06,36.0,41.257199862896805,ok,
+final_test,linear_regression,Metropol AVM,Food & Beverage,2023-02-13,34.0,41.27448073369322,ok,
+final_test,linear_regression,Metropol AVM,Food & Beverage,2023-02-20,23.0,41.669167522357476,ok,
+final_test,linear_regression,Metropol AVM,Food & Beverage,2023-02-27,43.0,41.08875069847086,ok,
+final_test,sarimax,Metropol AVM,Food & Beverage,2023-02-06,36.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85F4C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Food & Beverage,2023-02-13,34.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85F4C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Food & Beverage,2023-02-20,23.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85F4C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Food & Beverage,2023-02-27,43.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85F4C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Food & Beverage,2023-02-06,36.0,35.89253890514374,ok,
+final_test,lstm,Metropol AVM,Food & Beverage,2023-02-13,34.0,36.162931859493256,ok,
+final_test,lstm,Metropol AVM,Food & Beverage,2023-02-20,23.0,36.48779994249344,ok,
+final_test,lstm,Metropol AVM,Food & Beverage,2023-02-27,43.0,36.4005146920681,ok,
+final_test,linear_regression,Metropol AVM,Shoes,2023-02-06,32.0,33.30980005298778,ok,
+final_test,linear_regression,Metropol AVM,Shoes,2023-02-13,15.0,30.582025259890276,ok,
+final_test,linear_regression,Metropol AVM,Shoes,2023-02-20,29.0,25.170887993049178,ok,
+final_test,linear_regression,Metropol AVM,Shoes,2023-02-27,39.0,26.435043838483022,ok,
+final_test,sarimax,Metropol AVM,Shoes,2023-02-06,32.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB6ECCCC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Shoes,2023-02-13,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB6ECCCC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Shoes,2023-02-20,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB6ECCCC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Shoes,2023-02-27,39.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CB6ECCCC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Shoes,2023-02-06,32.0,17.94892643392086,ok,
+final_test,lstm,Metropol AVM,Shoes,2023-02-13,15.0,17.633512794971466,ok,
+final_test,lstm,Metropol AVM,Shoes,2023-02-20,29.0,21.094077587127686,ok,
+final_test,lstm,Metropol AVM,Shoes,2023-02-27,39.0,18.85026167333126,ok,
+final_test,linear_regression,Metropol AVM,Souvenir,2023-02-06,7.0,10.261817119988043,ok,
+final_test,linear_regression,Metropol AVM,Souvenir,2023-02-13,17.0,16.56082563104926,ok,
+final_test,linear_regression,Metropol AVM,Souvenir,2023-02-20,23.0,8.671613063501615,ok,
+final_test,linear_regression,Metropol AVM,Souvenir,2023-02-27,16.0,9.694117706379382,ok,
+final_test,sarimax,Metropol AVM,Souvenir,2023-02-06,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAEF253A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Souvenir,2023-02-13,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAEF253A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Souvenir,2023-02-20,23.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAEF253A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Souvenir,2023-02-27,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CAEF253A0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Souvenir,2023-02-06,7.0,10.012968242168427,ok,
+final_test,lstm,Metropol AVM,Souvenir,2023-02-13,17.0,0.0,ok,
+final_test,lstm,Metropol AVM,Souvenir,2023-02-20,23.0,0.0,ok,
+final_test,lstm,Metropol AVM,Souvenir,2023-02-27,16.0,0.0,ok,
+final_test,linear_regression,Metropol AVM,Technology,2023-02-06,10.0,9.632941900741335,ok,
+final_test,linear_regression,Metropol AVM,Technology,2023-02-13,5.0,7.585799776558738,ok,
+final_test,linear_regression,Metropol AVM,Technology,2023-02-20,29.0,10.516221309046141,ok,
+final_test,linear_regression,Metropol AVM,Technology,2023-02-27,0.0,7.24863872640278,ok,
+final_test,sarimax,Metropol AVM,Technology,2023-02-06,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC30F3BA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Technology,2023-02-13,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC30F3BA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Technology,2023-02-20,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC30F3BA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Technology,2023-02-27,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC30F3BA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Technology,2023-02-06,10.0,6.70709177851677,ok,
+final_test,lstm,Metropol AVM,Technology,2023-02-13,5.0,6.918785423040391,ok,
+final_test,lstm,Metropol AVM,Technology,2023-02-20,29.0,8.444966614246368,ok,
+final_test,lstm,Metropol AVM,Technology,2023-02-27,0.0,8.710396081209183,ok,
+final_test,linear_regression,Metropol AVM,Toys,2023-02-06,20.0,24.204813534725623,ok,
+final_test,linear_regression,Metropol AVM,Toys,2023-02-13,38.0,28.627291796235276,ok,
+final_test,linear_regression,Metropol AVM,Toys,2023-02-20,59.0,30.346740389875322,ok,
+final_test,linear_regression,Metropol AVM,Toys,2023-02-27,15.0,28.783684136844926,ok,
+final_test,sarimax,Metropol AVM,Toys,2023-02-06,20.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC65F1260>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Toys,2023-02-13,38.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC65F1260>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Toys,2023-02-20,59.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC65F1260>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Metropol AVM,Toys,2023-02-27,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CC65F1260>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Metropol AVM,Toys,2023-02-06,20.0,19.562649965286255,ok,
+final_test,lstm,Metropol AVM,Toys,2023-02-13,38.0,16.793055564165115,ok,
+final_test,lstm,Metropol AVM,Toys,2023-02-20,59.0,18.35193634033203,ok,
+final_test,lstm,Metropol AVM,Toys,2023-02-27,15.0,20.672755479812622,ok,
+final_test,linear_regression,Viaport Outlet,Books,2023-02-06,7.0,7.817907072799501,ok,
+final_test,linear_regression,Viaport Outlet,Books,2023-02-13,4.0,7.141913040120051,ok,
+final_test,linear_regression,Viaport Outlet,Books,2023-02-20,3.0,5.7764484779920835,ok,
+final_test,linear_regression,Viaport Outlet,Books,2023-02-27,1.0,5.1662377078751405,ok,
+final_test,sarimax,Viaport Outlet,Books,2023-02-06,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Books,2023-02-13,4.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Books,2023-02-20,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Books,2023-02-27,1.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Books,2023-02-06,7.0,10.176063537597656,ok,
+final_test,lstm,Viaport Outlet,Books,2023-02-13,4.0,8.650105476379395,ok,
+final_test,lstm,Viaport Outlet,Books,2023-02-20,3.0,9.832032680511475,ok,
+final_test,lstm,Viaport Outlet,Books,2023-02-27,1.0,11.96944284439087,ok,
+final_test,linear_regression,Viaport Outlet,Clothing,2023-02-06,35.0,46.44936677791324,ok,
+final_test,linear_regression,Viaport Outlet,Clothing,2023-02-13,45.0,44.51349583924099,ok,
+final_test,linear_regression,Viaport Outlet,Clothing,2023-02-20,44.0,46.61487960767976,ok,
+final_test,linear_regression,Viaport Outlet,Clothing,2023-02-27,31.0,44.645459716773175,ok,
+final_test,sarimax,Viaport Outlet,Clothing,2023-02-06,35.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Clothing,2023-02-13,45.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Clothing,2023-02-20,44.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Clothing,2023-02-27,31.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCA20F920>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Clothing,2023-02-06,35.0,49.45370814204215,ok,
+final_test,lstm,Viaport Outlet,Clothing,2023-02-13,45.0,47.73649549484252,ok,
+final_test,lstm,Viaport Outlet,Clothing,2023-02-20,44.0,48.15576469898223,ok,
+final_test,lstm,Viaport Outlet,Clothing,2023-02-27,31.0,46.99131226539611,ok,
+final_test,linear_regression,Viaport Outlet,Cosmetics,2023-02-06,23.0,21.898493590567778,ok,
+final_test,linear_regression,Viaport Outlet,Cosmetics,2023-02-13,23.0,17.970301963108824,ok,
+final_test,linear_regression,Viaport Outlet,Cosmetics,2023-02-20,18.0,20.579795195005612,ok,
+final_test,linear_regression,Viaport Outlet,Cosmetics,2023-02-27,28.0,21.9220630739391,ok,
+final_test,sarimax,Viaport Outlet,Cosmetics,2023-02-06,23.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF330180>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Cosmetics,2023-02-13,23.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF330180>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Cosmetics,2023-02-20,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF330180>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Cosmetics,2023-02-27,28.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF330180>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Cosmetics,2023-02-06,23.0,12.266298234462738,ok,
+final_test,lstm,Viaport Outlet,Cosmetics,2023-02-13,23.0,14.526328831911087,ok,
+final_test,lstm,Viaport Outlet,Cosmetics,2023-02-20,18.0,12.697209507226944,ok,
+final_test,lstm,Viaport Outlet,Cosmetics,2023-02-27,28.0,10.262243963778019,ok,
+final_test,linear_regression,Viaport Outlet,Food & Beverage,2023-02-06,20.0,20.08720405400761,ok,
+final_test,linear_regression,Viaport Outlet,Food & Beverage,2023-02-13,21.0,22.501093323348456,ok,
+final_test,linear_regression,Viaport Outlet,Food & Beverage,2023-02-20,16.0,19.78224759599248,ok,
+final_test,linear_regression,Viaport Outlet,Food & Beverage,2023-02-27,18.0,15.85705227647236,ok,
+final_test,sarimax,Viaport Outlet,Food & Beverage,2023-02-06,20.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF4F8900>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Food & Beverage,2023-02-13,21.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF4F8900>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Food & Beverage,2023-02-20,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF4F8900>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Food & Beverage,2023-02-27,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF4F8900>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Food & Beverage,2023-02-06,20.0,26.757025241851807,ok,
+final_test,lstm,Viaport Outlet,Food & Beverage,2023-02-13,21.0,20.08577060699463,ok,
+final_test,lstm,Viaport Outlet,Food & Beverage,2023-02-20,16.0,16.528684556484222,ok,
+final_test,lstm,Viaport Outlet,Food & Beverage,2023-02-27,18.0,20.508607447147373,ok,
+final_test,linear_regression,Viaport Outlet,Shoes,2023-02-06,15.0,12.626822292647327,ok,
+final_test,linear_regression,Viaport Outlet,Shoes,2023-02-13,3.0,9.810488803774547,ok,
+final_test,linear_regression,Viaport Outlet,Shoes,2023-02-20,11.0,10.471835363519197,ok,
+final_test,linear_regression,Viaport Outlet,Shoes,2023-02-27,14.0,11.823134151719835,ok,
+final_test,sarimax,Viaport Outlet,Shoes,2023-02-06,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD408B560>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Shoes,2023-02-13,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD408B560>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Shoes,2023-02-20,11.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD408B560>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Shoes,2023-02-27,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD408B560>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Shoes,2023-02-06,15.0,10.098936319351196,ok,
+final_test,lstm,Viaport Outlet,Shoes,2023-02-13,3.0,9.058489799499512,ok,
+final_test,lstm,Viaport Outlet,Shoes,2023-02-20,11.0,12.000395357608795,ok,
+final_test,lstm,Viaport Outlet,Shoes,2023-02-27,14.0,11.344221115112305,ok,
+final_test,linear_regression,Viaport Outlet,Souvenir,2023-02-06,5.0,5.9304644001537845,ok,
+final_test,linear_regression,Viaport Outlet,Souvenir,2023-02-13,7.0,5.476576267138591,ok,
+final_test,linear_regression,Viaport Outlet,Souvenir,2023-02-20,2.0,3.908893884166594,ok,
+final_test,linear_regression,Viaport Outlet,Souvenir,2023-02-27,9.0,5.532795403792931,ok,
+final_test,sarimax,Viaport Outlet,Souvenir,2023-02-06,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD69F7EC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Souvenir,2023-02-13,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD69F7EC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Souvenir,2023-02-20,2.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD69F7EC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Souvenir,2023-02-27,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD69F7EC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Souvenir,2023-02-06,5.0,8.16020467877388,ok,
+final_test,lstm,Viaport Outlet,Souvenir,2023-02-13,7.0,7.217971056699753,ok,
+final_test,lstm,Viaport Outlet,Souvenir,2023-02-20,2.0,6.086947679519653,ok,
+final_test,lstm,Viaport Outlet,Souvenir,2023-02-27,9.0,6.787249535322189,ok,
+final_test,linear_regression,Viaport Outlet,Technology,2023-02-06,10.0,8.217035837550029,ok,
+final_test,linear_regression,Viaport Outlet,Technology,2023-02-13,1.0,7.688102855015134,ok,
+final_test,linear_regression,Viaport Outlet,Technology,2023-02-20,9.0,6.553312442403551,ok,
+final_test,linear_regression,Viaport Outlet,Technology,2023-02-27,16.0,5.447522320761524,ok,
+final_test,sarimax,Viaport Outlet,Technology,2023-02-06,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD7CC19E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Technology,2023-02-13,1.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD7CC19E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Technology,2023-02-20,9.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD7CC19E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Technology,2023-02-27,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD7CC19E0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Technology,2023-02-06,10.0,9.25674307346344,ok,
+final_test,lstm,Viaport Outlet,Technology,2023-02-13,1.0,8.964293837547302,ok,
+final_test,lstm,Viaport Outlet,Technology,2023-02-20,9.0,8.393414497375488,ok,
+final_test,lstm,Viaport Outlet,Technology,2023-02-27,16.0,5.291977971792221,ok,
+final_test,linear_regression,Viaport Outlet,Toys,2023-02-06,10.0,15.160850888813204,ok,
+final_test,linear_regression,Viaport Outlet,Toys,2023-02-13,8.0,13.614146200588221,ok,
+final_test,linear_regression,Viaport Outlet,Toys,2023-02-20,19.0,16.542013906483355,ok,
+final_test,linear_regression,Viaport Outlet,Toys,2023-02-27,43.0,13.732821643500554,ok,
+final_test,sarimax,Viaport Outlet,Toys,2023-02-06,10.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDB94B9C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Toys,2023-02-13,8.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDB94B9C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Toys,2023-02-20,19.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDB94B9C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Viaport Outlet,Toys,2023-02-27,43.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDB94B9C0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Viaport Outlet,Toys,2023-02-06,10.0,10.095375806093216,ok,
+final_test,lstm,Viaport Outlet,Toys,2023-02-13,8.0,9.32358232140541,ok,
+final_test,lstm,Viaport Outlet,Toys,2023-02-20,19.0,9.773201644420624,ok,
+final_test,lstm,Viaport Outlet,Toys,2023-02-27,43.0,11.723103314638138,ok,
+final_test,linear_regression,Zorlu Center,Books,2023-02-06,16.0,4.809798549132752,ok,
+final_test,linear_regression,Zorlu Center,Books,2023-02-13,5.0,7.12027955784823,ok,
+final_test,linear_regression,Zorlu Center,Books,2023-02-20,16.0,7.361163415614512,ok,
+final_test,linear_regression,Zorlu Center,Books,2023-02-27,6.0,6.092349101733353,ok,
+final_test,sarimax,Zorlu Center,Books,2023-02-06,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD8D9DC60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Books,2023-02-13,5.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD8D9DC60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Books,2023-02-20,16.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD8D9DC60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Books,2023-02-27,6.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CD8D9DC60>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Books,2023-02-06,16.0,8.361979186534882,ok,
+final_test,lstm,Zorlu Center,Books,2023-02-13,5.0,6.887333393096924,ok,
+final_test,lstm,Zorlu Center,Books,2023-02-20,16.0,7.236925542354584,ok,
+final_test,lstm,Zorlu Center,Books,2023-02-27,6.0,9.535814702510834,ok,
+final_test,linear_regression,Zorlu Center,Clothing,2023-02-06,61.0,42.1367586003777,ok,
+final_test,linear_regression,Zorlu Center,Clothing,2023-02-13,60.0,40.25176495066346,ok,
+final_test,linear_regression,Zorlu Center,Clothing,2023-02-20,49.0,48.57222094296204,ok,
+final_test,linear_regression,Zorlu Center,Clothing,2023-02-27,46.0,51.15567172482391,ok,
+final_test,sarimax,Zorlu Center,Clothing,2023-02-06,61.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Clothing,2023-02-13,60.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Clothing,2023-02-20,49.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Clothing,2023-02-27,46.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Clothing,2023-02-06,61.0,42.59413728117943,ok,
+final_test,lstm,Zorlu Center,Clothing,2023-02-13,60.0,44.697342216968536,ok,
+final_test,lstm,Zorlu Center,Clothing,2023-02-20,49.0,42.118605583906174,ok,
+final_test,lstm,Zorlu Center,Clothing,2023-02-27,46.0,45.793916791677475,ok,
+final_test,linear_regression,Zorlu Center,Cosmetics,2023-02-06,15.0,24.50834332904901,ok,
+final_test,linear_regression,Zorlu Center,Cosmetics,2023-02-13,25.0,21.077597287139664,ok,
+final_test,linear_regression,Zorlu Center,Cosmetics,2023-02-20,29.0,22.310596267993446,ok,
+final_test,linear_regression,Zorlu Center,Cosmetics,2023-02-27,17.0,22.23945521469428,ok,
+final_test,sarimax,Zorlu Center,Cosmetics,2023-02-06,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Cosmetics,2023-02-13,25.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Cosmetics,2023-02-20,29.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Cosmetics,2023-02-27,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CCF201080>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Cosmetics,2023-02-06,15.0,25.713306069374084,ok,
+final_test,lstm,Zorlu Center,Cosmetics,2023-02-13,25.0,24.09692895412445,ok,
+final_test,lstm,Zorlu Center,Cosmetics,2023-02-20,29.0,22.733613789081573,ok,
+final_test,lstm,Zorlu Center,Cosmetics,2023-02-27,17.0,24.819043278694153,ok,
+final_test,linear_regression,Zorlu Center,Food & Beverage,2023-02-06,22.0,19.624583389993383,ok,
+final_test,linear_regression,Zorlu Center,Food & Beverage,2023-02-13,37.0,21.144917469432947,ok,
+final_test,linear_regression,Zorlu Center,Food & Beverage,2023-02-20,18.0,20.347613622391812,ok,
+final_test,linear_regression,Zorlu Center,Food & Beverage,2023-02-27,28.0,20.408474800705406,ok,
+final_test,sarimax,Zorlu Center,Food & Beverage,2023-02-06,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85E700>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Food & Beverage,2023-02-13,37.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85E700>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Food & Beverage,2023-02-20,18.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85E700>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Food & Beverage,2023-02-27,28.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CBE85E700>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Food & Beverage,2023-02-06,22.0,15.209476709365845,ok,
+final_test,lstm,Zorlu Center,Food & Beverage,2023-02-13,37.0,15.009719371795654,ok,
+final_test,lstm,Zorlu Center,Food & Beverage,2023-02-20,18.0,17.7534858584404,ok,
+final_test,lstm,Zorlu Center,Food & Beverage,2023-02-27,28.0,17.796648383140564,ok,
+final_test,linear_regression,Zorlu Center,Shoes,2023-02-06,22.0,13.902977021959273,ok,
+final_test,linear_regression,Zorlu Center,Shoes,2023-02-13,3.0,11.366997685236527,ok,
+final_test,linear_regression,Zorlu Center,Shoes,2023-02-20,19.0,14.282113896959874,ok,
+final_test,linear_regression,Zorlu Center,Shoes,2023-02-27,17.0,12.782162000847716,ok,
+final_test,sarimax,Zorlu Center,Shoes,2023-02-06,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDED8E520>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Shoes,2023-02-13,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDED8E520>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Shoes,2023-02-20,19.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDED8E520>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Shoes,2023-02-27,17.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CDED8E520>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Shoes,2023-02-06,22.0,11.80929347872734,ok,
+final_test,lstm,Zorlu Center,Shoes,2023-02-13,3.0,15.591616362333298,ok,
+final_test,lstm,Zorlu Center,Shoes,2023-02-20,19.0,14.864574044942856,ok,
+final_test,lstm,Zorlu Center,Shoes,2023-02-27,17.0,14.78336688876152,ok,
+final_test,linear_regression,Zorlu Center,Souvenir,2023-02-06,3.0,7.310079551612167,ok,
+final_test,linear_regression,Zorlu Center,Souvenir,2023-02-13,3.0,8.230681277643875,ok,
+final_test,linear_regression,Zorlu Center,Souvenir,2023-02-20,7.0,9.416631788009777,ok,
+final_test,linear_regression,Zorlu Center,Souvenir,2023-02-27,0.0,6.22300016238136,ok,
+final_test,sarimax,Zorlu Center,Souvenir,2023-02-06,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE09C5BC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Souvenir,2023-02-13,3.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE09C5BC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Souvenir,2023-02-20,7.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE09C5BC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Souvenir,2023-02-27,0.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE09C5BC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Souvenir,2023-02-06,3.0,3.0243914872407913,ok,
+final_test,lstm,Zorlu Center,Souvenir,2023-02-13,3.0,0.8218757808208466,ok,
+final_test,lstm,Zorlu Center,Souvenir,2023-02-20,7.0,1.565416231751442,ok,
+final_test,lstm,Zorlu Center,Souvenir,2023-02-27,0.0,3.9539564549922943,ok,
+final_test,linear_regression,Zorlu Center,Technology,2023-02-06,11.0,6.982383191540067,ok,
+final_test,linear_regression,Zorlu Center,Technology,2023-02-13,14.0,6.2018977101760875,ok,
+final_test,linear_regression,Zorlu Center,Technology,2023-02-20,22.0,6.85508262004967,ok,
+final_test,linear_regression,Zorlu Center,Technology,2023-02-27,14.0,6.759051125995479,ok,
+final_test,sarimax,Zorlu Center,Technology,2023-02-06,11.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE2FFBEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Technology,2023-02-13,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE2FFBEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Technology,2023-02-20,22.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE2FFBEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Technology,2023-02-27,14.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE2FFBEC0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Technology,2023-02-06,11.0,7.429835796356201,ok,
+final_test,lstm,Zorlu Center,Technology,2023-02-13,14.0,12.804295539855957,ok,
+final_test,lstm,Zorlu Center,Technology,2023-02-20,22.0,7.369821548461914,ok,
+final_test,lstm,Zorlu Center,Technology,2023-02-27,14.0,10.903459548950195,ok,
+final_test,linear_regression,Zorlu Center,Toys,2023-02-06,13.0,15.093684889141072,ok,
+final_test,linear_regression,Zorlu Center,Toys,2023-02-13,12.0,9.43532766703242,ok,
+final_test,linear_regression,Zorlu Center,Toys,2023-02-20,11.0,10.921876738096753,ok,
+final_test,linear_regression,Zorlu Center,Toys,2023-02-27,15.0,15.061719237530319,ok,
+final_test,sarimax,Zorlu Center,Toys,2023-02-06,13.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE3189DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Toys,2023-02-13,12.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE3189DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Toys,2023-02-20,11.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE3189DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,sarimax,Zorlu Center,Toys,2023-02-27,15.0,,error,Can't pickle <function ModelTrainer.train_sarimax.<locals>.record_optimizer_loss at 0x0000011CE3189DA0>: it's not found as __main__.ModelTrainer.train_sarimax.<locals>.record_optimizer_loss
+final_test,lstm,Zorlu Center,Toys,2023-02-06,13.0,6.099075257778168,ok,
+final_test,lstm,Zorlu Center,Toys,2023-02-13,12.0,5.307118713855743,ok,
+final_test,lstm,Zorlu Center,Toys,2023-02-20,11.0,6.807156175374985,ok,
+final_test,lstm,Zorlu Center,Toys,2023-02-27,15.0,3.8895443379879,ok,
