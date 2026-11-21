@@ -60,8 +60,10 @@ data:
     dayfirst: true
     target_column: quantity
 
+  
   modeling:
     granularity: weekly
     forecast_horizon_days: 30
+    forecast_horizon_weeks: 4
     week_start: MON
     output_path: data/processed/modeling_dataset.csv
