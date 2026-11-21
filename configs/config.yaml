@@ -11,7 +11,7 @@ data:
     file_path: data/raw/initial_dataset.csv
     url: null
     date_column: date
-    target_column: sales
+    target_column: quantity
     format: csv
 
   weather:
@@ -31,6 +31,7 @@ data:
       - snowfall_sum
       - wind_speed_10m_max
       - wind_gusts_10m_max
+      - relative_humidity_2m_mean
 
     hourly_variables:
       - relative_humidity_2m
@@ -48,18 +49,16 @@ validation:
 sales:
   input_file: data/source/original_transactions.csv
   output_file: data/raw/initial_dataset.csv
-
   format: csv
-
-  # Seleccionar: amount o quantity_price
-  sales_mode: quantity_price
 
   date_column: invoice_date
   quantity_column: quantity
   price_column: price
-  amount_column: Sales
-
+  category_column: category
+  store_column: shopping_mall
+  gender_column: gender
   dayfirst: true
+  target_column: quantity
 
 modeling:
   granularity: weekly

@@ -1,8 +1,8 @@
 
+from pathlib import Path
+
 import pandas as pd
 import yaml
-
-from pathlib import Path
 
 
 # ==========================================================
@@ -10,7 +10,6 @@ from pathlib import Path
 # ==========================================================
 
 def load_config():
-
     config_path = Path("configs/config.yaml")
 
     if not config_path.exists():
@@ -28,19 +27,18 @@ def load_config():
 
 
 # ==========================================================
-# VALIDACIONES GENERALES
+# VALIDACIONES
 # ==========================================================
 
-def validate_dates(df, dataset_name):
-
+def normalize_dates(df, dataset_name):
     if "date" not in df.columns:
         raise ValueError(
             f"{dataset_name}: no existe la columna date."
         )
 
+    df = df.copy()
     df["date"] = pd.to_datetime(
-        df["date"],
-        errors="coerce"
+        df["date"], errors="coerce"
     ).dt.normalize()
 
     if df["date"].isna().any():
@@ -48,78 +46,37 @@ def validate_dates(df, dataset_name):
             f"{dataset_name}: existen fechas invalidas."
         )
 
+    return df.sort_values("date").reset_index(drop=True)
+
+
+def validate_unique_dates(df, dataset_name):
     if df["date"].duplicated().any():
         raise ValueError(
             f"{dataset_name}: existen fechas duplicadas."
         )
 
-    return df.sort_values("date").reset_index(drop=True)
-
-
-def validate_daily_sales(sales, target_col):
-
-    if target_col not in sales.columns:
-        raise ValueError(
-            f"No existe la variable objetivo: {target_col}"
-        )
-
-    sales[target_col] = pd.to_numeric(
-        sales[target_col],
-        errors="coerce"
-    )
-
-    if sales[target_col].isna().any():
-        raise ValueError(
-            "Existen valores invalidos en las ventas."
-        )
-
-    expected_dates = pd.date_range(
-        start=sales["date"].min(),
-        end=sales["date"].max(),
-        freq="D"
-    )
-
-    missing_dates = expected_dates.difference(
-        sales["date"]
-    )
-
-    if len(missing_dates) > 0:
-        raise ValueError(
-            "Existen dias sin registros de ventas: "
-            f"{len(missing_dates)}. "
-            f"Ejemplos: {list(missing_dates[:5])}"
-        )
-
-    return sales
-
-
-# ==========================================================
-# AGREGACION DE VARIABLES CLIMATICAS
-# ==========================================================
 
 def get_weather_aggregation(column):
-
     name = column.lower()
 
     if any(word in name for word in [
-        "precipitation",
-        "rain",
-        "snow"
+        "precipitation", "rain", "snow", "observation"
     ]):
         return "sum"
 
-    if any(word in name for word in [
-        "wind",
-        "gust"
-    ]):
+    if "wind" in name or "gust" in name:
         return "max"
 
-    if "observation" in name:
-        return "sum"
-
-    # Temperatura y humedad:
-    # promedio semanal
     return "mean"
+
+
+def join_names(values):
+    names = {
+        str(value).strip()
+        for value in values.dropna()
+        if str(value).strip()
+    }
+    return " | ".join(sorted(names))
 
 
 # ==========================================================
@@ -127,7 +84,6 @@ def get_weather_aggregation(column):
 # ==========================================================
 
 def merge_datasets():
-
     config = load_config()
 
     data_config = config["data"]
@@ -136,7 +92,7 @@ def merge_datasets():
 
     if modeling_config.get("granularity", "weekly") != "weekly":
         raise ValueError(
-            "Este modulo esta configurado para granularidad weekly."
+            "Este modulo requiere granularidad weekly."
         )
 
     raw_path = Path(data_config["raw_path"])
@@ -147,30 +103,24 @@ def merge_datasets():
             "data/processed/modeling_dataset.csv"
         )
     )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    output_path.parent.mkdir(
-        parents=True,
-        exist_ok=True
+    target_col = initial_config.get("target_column", "quantity")
+
+    # ------------------------------------------------------
+    # 1. CARGAR ARCHIVOS
+    # ------------------------------------------------------
+
+    sales_path = Path(
+        initial_config.get(
+            "file_path",
+            "data/raw/initial_dataset.csv"
+        )
     )
-
-    target_col = initial_config["target_column"]
-
-    # ------------------------------------------------------
-    # 1. CARGAR DATASETS
-    # ------------------------------------------------------
-
-    sales_path = raw_path / "initial_dataset.csv"
     weather_path = raw_path / "istanbul_weather.csv"
     holidays_path = raw_path / "turkey_holidays.csv"
 
-    required_files = [
-        sales_path,
-        weather_path,
-        holidays_path
-    ]
-
-    for path in required_files:
-
+    for path in [sales_path, weather_path, holidays_path]:
         if not path.exists():
             raise FileNotFoundError(
                 f"No se encuentra el archivo: {path}"
@@ -180,38 +130,109 @@ def merge_datasets():
     weather = pd.read_csv(weather_path)
     holidays = pd.read_csv(holidays_path)
 
-    # Normalizar nombre de columna de fecha
-    date_col = initial_config["date_column"]
+    # ------------------------------------------------------
+    # 2. NORMALIZAR Y VALIDAR FECHAS
+    # ------------------------------------------------------
 
-    if date_col != "date":
-        sales.rename(
-            columns={date_col: "date"},
-            inplace=True
+    date_col = initial_config.get("date_column", "date")
+
+    if date_col not in sales.columns:
+        raise ValueError(
+            f"No existe la columna de fecha {date_col} en ventas."
         )
 
+    if date_col != "date":
+        sales = sales.rename(columns={date_col: "date"})
+
+    sales = normalize_dates(sales, "Ventas")
+    weather = normalize_dates(weather, "Clima")
+    holidays = normalize_dates(holidays, "Festivos")
+
+    # Ventas puede tener muchas filas por fecha.
+    # Clima y calendario deben tener una sola fila por fecha.
+    validate_unique_dates(weather, "Clima")
+    validate_unique_dates(holidays, "Festivos")
+
     # ------------------------------------------------------
-    # 2. VALIDAR FECHAS Y VENTAS
+    # 3. VALIDAR COLUMNAS DE VENTAS
     # ------------------------------------------------------
 
-    sales = validate_dates(
-        sales,
-        "Ventas"
+    dimensions = [
+        "shopping_mall",
+        "category",
+        "gender"
+    ]
+
+    required_sales = ["date", target_col] + dimensions
+
+    missing_columns = [
+        col for col in required_sales
+        if col not in sales.columns
+    ]
+
+    if missing_columns:
+        raise ValueError(
+            f"Faltan columnas en ventas: {missing_columns}"
+        )
+
+    sales[target_col] = pd.to_numeric(
+        sales[target_col], errors="coerce"
     )
 
-    weather = validate_dates(
-        weather,
-        "Clima"
+    if sales[target_col].isna().any():
+        raise ValueError(
+            f"Hay valores invalidos en {target_col}."
+        )
+
+    if (sales[target_col] < 0).any():
+        raise ValueError(
+            f"Hay valores negativos en {target_col}."
+        )
+
+    for col in dimensions:
+        sales[col] = sales[col].astype("string").str.strip()
+
+        if sales[col].isna().any() or (sales[col] == "").any():
+            raise ValueError(
+                f"Hay valores vacios en la dimension {col}."
+            )
+
+    # Validar ventas y transacciones
+    if "sales" in sales.columns:
+        sales["sales"] = pd.to_numeric(
+            sales["sales"], errors="coerce"
+        )
+        if sales["sales"].isna().any():
+            raise ValueError("Hay valores invalidos en sales.")
+
+    if "transactions" not in sales.columns:
+        sales["transactions"] = 0
+
+    sales["transactions"] = pd.to_numeric(
+        sales["transactions"], errors="coerce"
+    ).fillna(0)
+
+    # Consolidar por si existen claves repetidas
+    aggregations = {
+        target_col: "sum",
+        "transactions": "sum"
+    }
+
+    if "sales" in sales.columns:
+        aggregations["sales"] = "sum"
+
+    sales = (
+        sales.groupby(
+            ["date"] + dimensions,
+            as_index=False,
+            dropna=False
+        )
+        .agg(aggregations)
     )
 
-    holidays = validate_dates(
-        holidays,
-        "Festivos"
-    )
-
-    sales = validate_daily_sales(
-        sales,
-        target_col
-    )
+    # ------------------------------------------------------
+    # 4. VALIDAR COBERTURA DE CLIMA Y CALENDARIO
+    # ------------------------------------------------------
 
     start_date = sales["date"].min()
     end_date = sales["date"].max()
@@ -222,26 +243,19 @@ def merge_datasets():
         freq="D"
     )
 
-    # ------------------------------------------------------
-    # 3. VALIDAR COBERTURA DE CLIMA Y FESTIVOS
-    # ------------------------------------------------------
-
     for name, dataset in [
         ("Clima", weather),
         ("Festivos", holidays)
     ]:
-
         available_dates = set(dataset["date"])
-
         missing_dates = set(expected_dates) - available_dates
 
         if missing_dates:
             raise ValueError(
-                f"{name}: faltan {len(missing_dates)} dias "
-                f"en el periodo de ventas."
+                f"{name}: faltan {len(missing_dates)} dias. "
+                f"Ejemplos: {list(sorted(missing_dates)[:5])}"
             )
 
-    # Seleccionar solamente el periodo de ventas
     weather = weather[
         weather["date"].between(start_date, end_date)
     ].copy()
@@ -250,52 +264,111 @@ def merge_datasets():
         holidays["date"].between(start_date, end_date)
     ].copy()
 
-    # Validar variables obligatorias
-    required_holiday_columns = [
-        "is_holiday",
-        "is_weekend"
-    ]
-
-    missing_holiday_columns = [
-        col for col in required_holiday_columns
+    required_calendar = ["is_holiday", "is_weekend"]
+    missing_calendar = [
+        col for col in required_calendar
         if col not in holidays.columns
     ]
 
-    if missing_holiday_columns:
+    if missing_calendar:
         raise ValueError(
-            "Faltan columnas de calendario: "
-            f"{missing_holiday_columns}"
+            f"Faltan columnas de calendario: {missing_calendar}"
         )
 
-    if "daily_variables" in data_config["weather"]:
-        required_weather = (
-            data_config["weather"]["daily_variables"]
-            + ["relative_humidity_2m_mean"]
-        )
-
-        missing_weather = [
-            col for col in required_weather
-            if col not in weather.columns
-        ]
-
-        if missing_weather:
-            raise ValueError(
-                f"Faltan variables climaticas: {missing_weather}"
-            )
-
     # ------------------------------------------------------
-    # 4. INTEGRAR VENTAS + CLIMA + FESTIVOS
+    # 5. COMPLETAR PANEL DIARIO DE DEMANDA
     # ------------------------------------------------------
 
-    daily = sales.merge(
+    # Se conservan las combinaciones que aparecen en ventas.
+    combinations = sales[dimensions].drop_duplicates()
+
+    dates = pd.DataFrame({"date": expected_dates})
+
+    panel = combinations.merge(dates, how="cross")
+
+    daily = panel.merge(
+        sales,
+        on=["date"] + dimensions,
+        how="left",
+        validate="one_to_one"
+    )
+
+    # Un dia sin transacciones equivale a demanda cero.
+    daily[target_col] = daily[target_col].fillna(0)
+    daily["transactions"] = daily["transactions"].fillna(0)
+
+    if "sales" in daily.columns:
+        daily["sales"] = daily["sales"].fillna(0)
+
+    # ------------------------------------------------------
+    # 6. INTEGRAR CLIMA Y CALENDARIO A NIVEL DIARIO
+    # ------------------------------------------------------
+
+    daily = daily.merge(
         weather,
         on="date",
         how="left",
-        validate="one_to_one",
-        suffixes=("", "_weather")
+        validate="many_to_one"
     )
 
     daily = daily.merge(
+        holidays,
+        on="date",
+        how="left",
+        validate="many_to_one",
+        suffixes=("", "_holiday")
+    )
+
+    if daily[required_calendar].isna().any().any():
+        raise ValueError(
+            "Hay valores faltantes en las variables del calendario."
+        )
+
+    # No imputar clima en esta etapa.
+    # Los faltantes se reportan para su tratamiento posterior.
+
+    # ------------------------------------------------------
+    # 7. DEFINIR SEMANAS (LUNES A DOMINGO)
+    # ------------------------------------------------------
+
+    week_start_day = modeling_config.get("week_start", "MON")
+
+    if week_start_day != "MON":
+        raise ValueError(
+            "Actualmente el modulo requiere semanas iniciando el lunes."
+        )
+
+    daily["week_start"] = (
+        daily["date"]
+        - pd.to_timedelta(daily["date"].dt.day_of_week, unit="D")
+    )
+
+    # ------------------------------------------------------
+    # 8. AGREGAR VENTAS POR DIMENSIONES Y SEMANA
+    # ------------------------------------------------------
+
+    sales_aggregations = {
+        target_col: "sum",
+        "transactions": "sum"
+    }
+
+    if "sales" in daily.columns:
+        sales_aggregations["sales"] = "sum"
+
+    weekly_sales = (
+        daily.groupby(
+            ["week_start"] + dimensions,
+            as_index=False
+        )
+        .agg(sales_aggregations)
+    )
+
+    
+    # ------------------------------------------------------
+    # 9. AGREGAR CLIMA Y CALENDARIO UNA SOLA VEZ POR SEMANA
+    # ------------------------------------------------------
+
+    features_daily = weather.merge(
         holidays,
         on="date",
         how="left",
@@ -303,36 +376,14 @@ def merge_datasets():
         suffixes=("", "_holiday")
     )
 
-    if len(daily) != len(sales):
-        raise ValueError(
-            "El numero de registros cambio durante la integracion."
-        )
-
-    if daily[
-        ["is_holiday", "is_weekend"]
-    ].isna().any().any():
-
-        raise ValueError(
-            "Existen valores faltantes en el calendario."
-        )
-
-    # No imputar clima aqui.
-    # Los valores faltantes se reportan para su tratamiento
-    # en la etapa de limpieza.
-
-    # ------------------------------------------------------
-    # 5. PREPARAR VARIABLES PARA AGREGACION SEMANAL
-    # ------------------------------------------------------
-
-    daily["week_start"] = (
-        daily["date"]
+    features_daily["week_start"] = (
+        features_daily["date"]
         - pd.to_timedelta(
-            daily["date"].dt.weekday,
+            features_daily["date"].dt.day_of_week,
             unit="D"
         )
     )
 
-    # Identificar variables climaticas numericas
     excluded_columns = {
         "date",
         "week_start",
@@ -347,158 +398,135 @@ def merge_datasets():
     weather_columns = [
         col for col in weather.columns
         if col not in excluded_columns
-        and pd.api.types.is_numeric_dtype(
-            daily[col]
-        )
+        and pd.api.types.is_numeric_dtype(weather[col])
     ]
 
-    # ------------------------------------------------------
-    # 6. DEFINIR REGLAS DE AGREGACION SEMANAL
-    # ------------------------------------------------------
-
-    aggregations = {
-        target_col: "sum",
+    weekly_aggregations = {
         "date": "max",
         "is_holiday": "sum",
         "is_weekend": "sum"
     }
 
-    for column in weather_columns:
+    for col in weather_columns:
+        weekly_aggregations[col] = get_weather_aggregation(col)
 
-        aggregations[column] = (
-            get_weather_aggregation(column)
-        )
+    if "holiday_name" in features_daily.columns:
+        weekly_aggregations["holiday_name"] = join_names
 
-    if "holiday_name" in daily.columns:
-
-        aggregations["holiday_name"] = (
-            lambda values: " | ".join(
-                sorted({
-                    str(value).strip()
-                    for value in values.dropna()
-                    if str(value).strip()
-                })
-            )
-        )
-
-    # ------------------------------------------------------
-    # 7. GENERAR DATASET SEMANAL
-    # ------------------------------------------------------
-
-    weekly = (
-        daily.groupby("week_start")
-        .agg(aggregations)
+    weekly_features = (
+        features_daily.groupby("week_start")
+        .agg(weekly_aggregations)
         .reset_index()
     )
 
-    weekly.rename(
+    weekly_features = weekly_features.rename(
         columns={
             "date": "week_end",
             "is_holiday": "holiday_days",
             "is_weekend": "weekend_days"
-        },
-        inplace=True
+        }
     )
 
-    # Cantidad real de dias incluidos en cada semana
     days_per_week = (
-        daily.groupby("week_start")
-        .size()
+        features_daily.groupby("week_start")["date"]
+        .nunique()
         .rename("days_in_period")
         .reset_index()
     )
 
-    weekly = weekly.merge(
+    weekly_features = weekly_features.merge(
         days_per_week,
         on="week_start",
         how="left",
         validate="one_to_one"
     )
 
-    weekly["has_holiday"] = (
-        weekly["holiday_days"] > 0
+    weekly_features["has_holiday"] = (
+        weekly_features["holiday_days"] > 0
     ).astype(int)
 
-    weekly["is_partial_week"] = (
-        weekly["days_in_period"] < 7
+    weekly_features["is_partial_week"] = (
+        weekly_features["days_in_period"] < 7
     ).astype(int)
 
-    # Ordenar cronologicamente
+    # ------------------------------------------------------
+    # 10. INTEGRAR VENTAS SEMANALES Y VARIABLES EXOGENAS
+    # ------------------------------------------------------
+
+    weekly = weekly_sales.merge(
+        weekly_features,
+        on="week_start",
+        how="left",
+        validate="many_to_one"
+    )
+
     weekly = weekly.sort_values(
-        "week_start"
+        ["shopping_mall", "category", "gender", "week_start"]
     ).reset_index(drop=True)
 
     # ------------------------------------------------------
-    # 8. VALIDAR DATASET FINAL
+    # 11. VALIDACIONES FINALES
     # ------------------------------------------------------
 
     if weekly.empty:
-        raise ValueError(
-            "El dataset semanal esta vacio."
-        )
+        raise ValueError("El dataset semanal esta vacio.")
 
     if weekly[target_col].isna().any():
         raise ValueError(
-            "Existen valores faltantes en las ventas semanales."
+            f"Hay valores faltantes en {target_col}."
         )
 
-    if weekly["week_start"].duplicated().any():
+    if weekly.duplicated(
+        subset=["week_start"] + dimensions
+    ).any():
         raise ValueError(
-            "Existen semanas duplicadas."
+            "Hay semanas duplicadas para una combinacion dimensional."
         )
 
     # ------------------------------------------------------
-    # 9. GUARDAR DATASET
+    # 12. GUARDAR RESULTADO
     # ------------------------------------------------------
 
-    weekly.to_csv(
-        output_path,
-        index=False
-    )
+    weekly.to_csv(output_path, index=False)
 
     # ------------------------------------------------------
-    # 10. REPORTE
+    # 13. REPORTE
     # ------------------------------------------------------
 
     forecast_days = modeling_config.get(
-        "forecast_horizon_days",
-        30
+        "forecast_horizon_days", 30
     )
 
     print("\n========================================")
     print(" DATASET SEMANAL DE MODELADO GENERADO")
     print("========================================")
 
-    print("Registros diarios:", len(daily))
+    print("Registros diarios del panel:", len(daily))
     print("Registros semanales:", len(weekly))
+    print("Combinaciones tienda/categoria/genero:",
+          len(combinations))
 
     print("Fecha inicial:", start_date.date())
     print("Fecha final:", end_date.date())
 
+    print("Demanda total:", weekly[target_col].sum())
+
+    if "sales" in weekly.columns:
+        print("Ventas totales:", weekly["sales"].sum())
+
+    print("Tiendas:", weekly["shopping_mall"].nunique())
+    print("Categorias:", weekly["category"].nunique())
+    print("Generos:", weekly["gender"].nunique())
+
     print("Horizonte de pronostico:", forecast_days, "dias")
-    print("Granularidad: semanal")
+    print("Periodos semanales aproximados:",
+          (forecast_days + 6) // 7)
 
-    print(
-        "Periodos semanales aproximados:",
-        (forecast_days + 6) // 7
-    )
+    print("Semanas parciales:",
+          weekly_features["is_partial_week"].sum())
 
-    print("Ventas totales:", weekly[target_col].sum())
-
-    print(
-        "Semanas parciales:",
-        weekly["is_partial_week"].sum()
-    )
-
-    print(
-        "Valores faltantes por columna:"
-    )
-
-    print(
-        weekly.isna().sum()[
-            weekly.isna().sum() > 0
-        ]
-    )
+    print("\nValores faltantes por columna:")
+    print(weekly.isna().sum()[weekly.isna().sum() > 0])
 
     print("\nColumnas generadas:")
     print(weekly.columns.tolist())
@@ -507,7 +535,6 @@ def merge_datasets():
     print(weekly.head().to_string(index=False))
 
     print("\nArchivo generado:", output_path)
-
     print("\nINTEGRACION COMPLETADA")
     print("========================================")
 
