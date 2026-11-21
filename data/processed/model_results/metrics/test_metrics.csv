@@ -1,0 +1,4 @@
+﻿partition,model,WAPE_mean_series,MAPE_mean_series,RMSE_mean_series,successful_series,total_series,WAPE_global,MAPE_global,RMSE_global,mape_zero_excluded_global,n_observations_global
+final_test,linear_regression,40.383707054591305,47.05644734578712,9.844495478356066,80,80,24.056800323639198,45.95176921162739,11.549365340021334,8,320
+final_test,lstm,47.53899773807879,51.3216568332719,11.952384048929456,80,80,29.860690930178524,50.60666893280976,14.298792721859808,8,320
+final_test,sarimax,,,,0,80,,,,0,0

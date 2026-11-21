@@ -1,0 +1,9 @@
+
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+PyYAML>=6.0
+holidays>=0.60
+openpyxl>=3.1
+tqdm>=4.66
+pytest>=8.0
